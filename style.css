@@ -28,7 +28,7 @@ body {
 
 .header {
     width: 100%;
-    height: 100vh;
+    height: auto;
     text-align: center;
     position: relative;
     filter: brightness(100%);
@@ -36,25 +36,6 @@ body {
     scroll-snap-stop: start;
 }
 
-
-.header .background {
-    background: url('assets/fundo-hero.jpg') no-repeat center center/cover;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    filter: brightness(24%);
-}
-
-.header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.103);
-    z-index: -1;
-}
 
 .header nav {
     display: flex;
@@ -101,7 +82,7 @@ body {
     transform: translateY(-1px);
 }
 
-.header .intro {
+.home .intro {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -114,7 +95,35 @@ body {
     flex-direction: column;
 }
 
-.header .intro img {
+.home{
+
+    height: 100vh;
+}
+
+.home .background {
+    background: url('assets/fundo-hero.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(24%);
+}
+
+.home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.103);
+    z-index: -1;
+}
+
+.home .intro{
+    z-index: 10;
+}
+
+.home .intro img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -123,24 +132,25 @@ body {
     /* Sombra na imagem do perfil */
     transition: transform 0.3s;
     /* Animação ao passar o mouse */
+
 }
 
-.header .intro img:hover {
+.home .intro img:hover {
     transform: scale(1.05);
     /* Aumenta a imagem ao passar o mouse */
 }
 
-.header .intro h1 {
+.home .intro h1 {
     font-size: 48px;
     margin: 20px 0 10px;
     color: var(--colorpadrao);
 }
 
-.header .intro p {
+.home .intro p {
     font-size: 18px;
 }
 
-.header .intro .btn-codepoint {
+.home  .intro .btn-codepoint {
     background-color: var(--colorpadrao);
     padding: 10px 20px;
     margin-top: 40px;
@@ -152,17 +162,17 @@ body {
     transition: all 0.2s linear, transform 0.4s linear;
 }
 
-.header .intro .btn-codepoint:hover {
+.home  .intro .btn-codepoint:hover {
     background-color: #fff;
     color: var(--colorpadrao);
     transform: translateY(-2px);
 }
 
-.header .intro .btn-codepoint:active{
+.home  .intro .btn-codepoint:active{
     opacity: 0.8;
 }
 
-.header .scroll-down {
+.home .scroll-down {
     position: absolute;
     bottom: 20px;
     left: 50%;
