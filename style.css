@@ -1,0 +1,782 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorwhite: #fff;
+    --colorblack: #000;
+    --colorpadrao: #e94560;
+    --colorfundo: #1b1b2f;
+    --colorsecundary: #1f4068;
+    --shawdonBox:  0 8px 20px rgba(0, 0, 0, 0.3);
+    --fontpadrao: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b2f;
+    color: var(--colorwhite);
+}
+
+
+.header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    filter: brightness(100%);
+    z-index: 99;
+    scroll-snap-stop: start;
+}
+
+
+.header .background {
+    background: url('assets/fundo-hero.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(24%);
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.103);
+    z-index: -1;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    filter: brightness(100%);
+    z-index: 10;
+    font-size: 16px;
+}
+
+.header nav a {
+    color: var(--colorwhite);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.header nav a:hover {
+    color: var(--colorpadrao);
+}
+
+.header .contact-btn {
+    background-color: var(--colorpadrao);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease-in, transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header .contact-btn img {
+    width: 30px;
+}
+
+.header .contact-btn:hover {
+    background-color: #fff;
+    color: var(--colorpadrao);
+    transform: translateY(-1px);
+}
+
+.header .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header .intro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 10 px rgba(0, 0, 0, 0.3);
+    /* Sombra na imagem do perfil */
+    transition: transform 0.3s;
+    /* Animação ao passar o mouse */
+}
+
+.header .intro img:hover {
+    transform: scale(1.05);
+    /* Aumenta a imagem ao passar o mouse */
+}
+
+.header .intro h1 {
+    font-size: 48px;
+    margin: 20px 0 10px;
+    color: var(--colorpadrao);
+}
+
+.header .intro p {
+    font-size: 18px;
+}
+
+.header .intro .btn-codepoint {
+    background-color: var(--colorpadrao);
+    padding: 10px 20px;
+    margin-top: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 12px;
+    transition: all 0.2s linear, transform 0.4s linear;
+}
+
+.header .intro .btn-codepoint:hover {
+    background-color: #fff;
+    color: var(--colorpadrao);
+    transform: translateY(-2px);
+}
+
+.header .intro .btn-codepoint:active{
+    opacity: 0.8;
+}
+
+.header .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+.caroucel-mod{
+    width: 100%;
+    height: 60px;
+}
+
+
+
+
+/*main*/
+
+.about,
+.services {
+    padding: 50px 100px;
+    background-color: #162447;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h2,
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--colorpadrao);
+}
+
+.about .content,
+.services .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .content img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra na imagem */
+}
+
+.about .content .text {
+    max-width: 600px;
+}
+
+.about .content .text p {
+    margin-bottom: 20px;
+}
+
+.about .content .text p span {
+    font-weight: 500;
+    color: var(--colorpadrao);
+}
+
+.about .content .text .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.about .content .text .info div {
+    width: 45%;
+}
+
+.about .content .text .info div p {
+    margin: 5px 0;
+}
+
+.about .content .text .download-btn {
+    background-color: var(--colorpadrao);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.about .content .text .download-btn:hover {
+    background-color: var(--colorpadrao);
+
+
+}
+
+/*SERVIÇOS*/
+
+
+.services {
+    padding: 50px 100px;
+    background-color:var(--colorfundo);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--colorpadrao);
+}
+
+.services .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permite que os cartões se movam para a próxima linha em telas menores */
+    align-items: center;
+}
+
+.services .service {
+    background-color: var(--colorsecundary);
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    height: 300px;
+    /* Ajusta a largura para 3 cartões em uma linha com espaço */
+    margin: 10px;
+    /* Espaço entre os cartões */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Efeito suave ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services .service:hover {
+    transform: translateY(-5px);
+    /* Levanta o cartão ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Aumenta a sombra ao passar o mouse */
+}
+
+.services .service i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--colorpadrao);
+}
+
+.services .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    /* Cor do texto do título */
+}
+
+.services .service p {
+    font-size: 15px;
+    color: #ffffff;
+    /* Cor do texto da descrição */
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*preços*/
+
+.pricing-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--colorsecundary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--colorpadrao);
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.plan-title.test{
+    color: #2fc552;;
+}
+
+.price.test{
+    color: #239b3f;
+}
+.pricing-card {
+    background-color: var(--colorsecundary);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card.test{
+    border: 1px solid #2fc552;
+}
+
+.plan-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    color: var(--colorpadrao);
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.benefits li {
+    font-size: 1rem;
+    color: #fff;
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.benefits li::before {
+    content: '✔';
+    color: #28a745;
+    position: absolute;
+    left: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: var(--fontpadrao);
+    font-weight: 700;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo Premium */
+.premium {
+    border: 2px solid #ffc107;
+}
+
+.premium .plan-title {
+    color: #ffc107;
+}
+
+.premium .price {
+    color: #ff9800;
+}
+
+
+
+
+
+
+
+
+
+/*PROJETOS*/
+
+.projects {
+    padding: 50px 100px;
+    background-color: var(--colorsecundary);
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--colorpadrao);
+
+}
+
+.projects .content-projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects .project-card {
+    background-color: var(--colorsecundary);
+    padding: 6px;
+    border-radius: 10px;
+    width: 20%;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Efeito suave ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects .project-card:hover {
+    transform: translateY(-6px);
+    /* Aumenta o projeto ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Aumenta a sombra ao passar o mouse */
+}
+
+.project-image {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.projects-card .project-title {
+    font-size: 24px;
+    margin:0px 0 ;
+    color: var(--colorpadrao);
+}
+
+.project-card .technologies {
+    font-size: 1rem;
+    color: var(--colorwhite);
+    margin: 10px 20px;
+    text-align: center;
+    opacity: 0.6;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+} 
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top: 1px solid #ddd;
+    gap: 30px;
+}
+
+.source-code, .access-button {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    background-color: #0056b3;
+    font-family: var(--fontpadrao);
+    font-weight: 700;
+    
+}
+.source-code:hover, .access-button:hover{
+    background-color: var(--colorpadrao);
+}
+
+footer {
+    background-color: var(--colorfundo);
+
+    color: #ffffff;
+    padding: 30px 100px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+footer .footer-content p {
+    margin: 5px 0;
+}
+
+footer .credit-text {
+    font-weight: 100;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: var(--colorpadrao);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+};
+
+
+
+
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 1366px */
+
+@media (max-width: 1366px) {
+    .header nav {
+        padding: 20px 30px;
+    }
+
+    .header .intro h1 {
+        font-size: 36px;
+    }
+
+    .about,
+    .services {
+        padding: 40px 80px;
+    }
+
+    .about .content img,
+    .about .content .text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .content img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .services .service {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Para telas menores que 1024px */
+@media (max-width: 1024px) {
+    .header .intro h1 {
+        font-size: 30px;
+    }
+
+    .about,
+    .services {
+        padding: 30px 60px;
+    }
+
+    .services .service {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+    .header .intro h1 {
+        font-size: 24px;
+    }
+
+    .header .intro p {
+        font-size: 16px;
+    }
+
+    .about,
+    .services {
+        padding: 20px 40px;
+    }
+
+    .about .content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projects .project-card {
+        width: 100%;
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+
+    .header nav{
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .header nav .menu a{
+        font-size: 12px;
+    }
+    .header .logo{
+        display: none;
+    }
+
+
+    .header .intro h1 {
+        font-size: 20px;
+    }
+
+    .header .intro p {
+        font-size: 14px;
+    }
+
+    .caroucel-mod{
+        display: none;
+    }
+    
+
+    .about .content,
+    .services .content{
+        flex-direction: column;
+    }
+
+    .about .content img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .about .content .text p {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .header nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+
+
+    
+
+    .services .service{
+        height: 200px;
+    }
+
+
+
+    .about,
+    .services {
+        padding: 10px 20px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .projects .content-projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .project-card {
+        width: 90%;
+    }
+
+    .projects .content-projects{
+        width: 100%;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1px;
+    }
+
+    .projects .content-projects{
+        justify-content:center;
+    }
+
+    .projects h2{
+        text-align: center;
+    }
+
+    .projects .project-card {
+        width: 90%;
+    }
+
+
+
+
+}
