@@ -14,13 +14,12 @@ function showProjects(projects){
 
         
     listProject +=`
-        <div class="project-card">
+        <div class="project-card reveal">
         <img src="${project.img}" alt="Imagem do Projeto 1" class="project-image">
         <h3 class="project-title">${project.titulo}</h3>
         <p class="technologies">${project.tech}</p>
         <div class="project-links">
-            <a href="${project.linkFont}" target="_blank" class="source-code">Código
-                Fonte</a>
+
             <a href="${project.linkSite}" target="_blank" class="access-button">Acessar Site</a>
         </div>
         </div>
@@ -38,3 +37,5 @@ document.addEventListener("DOMContentLoaded", ()=> {
 });
 
 
+/*<a href="${project.linkFont}" target="_blank" class="source-code">Código
+                Fonte</a>*/

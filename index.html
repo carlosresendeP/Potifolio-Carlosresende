@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- scrollreveal -->
+    <link rel="stylesheet" href="style.css">
     <title>Portfólio Carlos Resende</title>
 </head>
 
 <body>
     <header class="header" id="home">
 
+
+
         <nav>
             <div class="logo">
-                <a href="#">Carlos</a>
+                <a href="#">CARLOS</a>
             </div>
             <div class="menu">
                 <a href="#home">Home</a>
@@ -27,10 +32,14 @@
             </div>
             <a class="contact-btn"
                 href="https://wa.me/5532998283189?text=Quero%20fazer%20um%20or%C3%A7amento%20de%20um%20website!%20"
-                target="_blank">Contato <img src="../assets/whatsapp-icon.svg" alt=""></a>
+                target="_blank">Contato <img src="assets/whatsapp-icon.svg" alt="whatzap-icon" rel="noopener noreferrer"></a>
         </nav>
 
     </header>
+
+    <div class="alert-message">
+        <p>Não é possivel contratar no momento!</p>
+    </div>
 
     <div class="caroucel-mod">
 
@@ -38,25 +47,25 @@
 
     <main>
 
-        <section id="home" class="home">
+        <section id="home" class="home ">
             <div class="overlay"></div>
-            <div class="background"></div>
-            <div class="intro">
-                <img alt="Perfil do Carlos Resende" height="150" src="../assets/photo-perfil.png" width="150" />
+            <div class="background revealDelay300"></div>
+            <div class="intro reveal">
+                <img alt="Perfil do Carlos Resende" height="150" src="assets/photo-perfil.png" width="150" />
                 <h1>Carlos Resende</h1>
                 <p>Desenvolvedor Front-End & Programador Web</p>
                 <a href="/pages/formpage.html"
-                    class="btn-codepoint" target="_blank">Solicite seu WebSite!</a>
+                    class="btn-codepoint" target="_blank" rel="noopener noreferrer">Entre em Contato</a>
     
     
             </div>
             <div class="scroll-down">Role para baixo</div>
         </section>
 
-        <section class="about" id="about">
+        <section class="about reveal" id="about ">
             <h2>Descubra <span> sobre mim</span></h2>
             <div class="content">
-                <img alt="Portrait of Carlos" height="300" src="../assets/photo-perfil.png" width="300" />
+                <img alt="Portrait of Carlos" height="300" src="assets/photo-perfil.png" width="300" />
                 <div class="text">
                     <p>Oi! Carlos Resende, sou programador web especializado em Front-End, é quem sou. Minha paixão é
                         converter conceitos em experiências digitais extraordinárias, unindo design contemporâneo a uma
@@ -92,20 +101,20 @@
         <section class="services" id="services">
             <h2><span>Meus serviços</span></h2>
             <div class="content">
-                <article class="service">
+                <article class="service reveal">
                     <i class="fas fa-paint-brush"></i>
                     <h3>Desenvolvedor web</h3>
                     <p>Desenvolvimento de websites contemporâneos responsivos e otimizados. Desde websites
                         institucionais até portfólios e lojas online, converto suas ideias em experiências digitais
                         impactantes.</p>
                 </article>
-                <article class="service">
+                <article class="service revealDelay300">
                     <i class="fas fa-bullhorn"></i>
                     <h3>Marca</h3>
                     <p>Criação de uma presença digital que reflete os valores e a personalidade da sua marca. Do design
                         à comunicação visual, tudo é pensado para destacar sua marca no mercado.</p>
                 </article>
-                <article class="service">
+                <article class="service revealDelay500">
                     <i class="fas fa-desktop"></i>
                     <h3>Interface do usuário</h3>
                     <p>Interfaces modernas e intuitivas, com foco na experiência do usuário. Garanta que seu público
@@ -122,7 +131,7 @@
             <div class="pricing-cards">
 
                 <!--  Card 1-->
-                <div class="pricing-card test">
+                <div class="pricing-card test reveal">
                     <h3 class="plan-title test">Peça um teste</h3>
                     <p class="price test">R$ 0</p>
                     <ul class="benefits">
@@ -133,7 +142,7 @@
                     <button class="cta-button">Contratar</button>
                 </div>
                 <!--  Card 2-->
-                <div class="pricing-card">
+                <div class="pricing-card revealDelay300">
                     <h3 class="plan-title">Plano Básico</h3>
                     <p class="price">R$ 497,00</p>
                     <ul class="benefits">
@@ -149,7 +158,7 @@
                     <button class="cta-button">Contratar</button>
                 </div>
                 <!--  Card 3-->
-                <div class="pricing-card premium">
+                <div class="pricing-card premium revealDelay500">
                     <h3 class="plan-title">Plano Avançado</h3>
                     <p class="price">R$ 1097,00</p>
                     <ul class="benefits">
@@ -174,7 +183,7 @@
 
 
 
-        <section class="projects">
+        <section class="projects ">
             <h2 class="section-title project-title">Conheça meus Projetos</h2>
             <div class="content-projects">
                 <!-- Card 1 
@@ -208,12 +217,12 @@
 
     <footer>
 
-        <div class="footer-content" id="footer">
+        <div class="footer-content " id="footer">
             <h2>Contato</h2>
             <p>Email: carlosresende.paula@gmail.com</p>
             <p>Tel: +55 32 9 9828-3189</p>
-            <p>Siga-me<a href="https://www.linkedin.com/in/carlos-paula2001/" target="_blank"> LinkedIn</a> and <a
-                    href="https://github.com/carlosresendeP" target="_blank">GitHub</a></p>
+            <p>Siga-me<a href="https://www.linkedin.com/in/carlos-paula2001/" target="_blank" rel="noopener noreferrer"> LinkedIn</a> and <a
+                    href="https://github.com/carlosresendeP" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         </div>
         <p class="credit-text">  &copy; <span class="date"></span> Site desenvolvido por Carlos Resende</p>
     </footer>
@@ -221,6 +230,7 @@
 
 
 </html>
-<script src="cardprojects.js"></script>
-<script src="projects.js"></script>
-<script src="script.js"></script>
+<script src="./js/cardprojects.js"></script>
+<script src="./js/projects.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/reveal.js"></script>
