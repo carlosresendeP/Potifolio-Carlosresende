@@ -11,7 +11,7 @@
     --colorfundo: #1b1b2f;
     --colorsecundary: #1f4068;
     --shawdonBox:  0 8px 20px rgba(0, 0, 0, 0.3);
-    --fontpadrao: 'Roboto', sans-serif;
+    --fontpadrao: "Poppins", serif;
 }
 
 html{
@@ -109,8 +109,8 @@ body {
 }
 
 .header .contact-btn:hover {
-    background-color: #fff;
-    color: var(--colorpadrao);
+    background-color: #239b3f;
+    color: #fff;
     transform: translateY(-1px);
 }
 
@@ -127,7 +127,7 @@ body {
 
 .home .intro {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -162,7 +162,7 @@ body {
     z-index: 10;
 }
 
-.home .intro img {
+.home .intro .photo-perfil {
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -174,7 +174,7 @@ body {
 
 }
 
-.home .intro img:hover {
+.home .intro .photo-perfil:hover {
     transform: scale(1.05);
     /* Aumenta a imagem ao passar o mouse */
 }
@@ -192,18 +192,28 @@ body {
 .home  .intro .btn-codepoint {
     background-color: var(--colorpadrao);
     padding: 15px 40px;
+    width: auto;
     margin-top: 40px;
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 700;
+    letter-spacing: 2px;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     transition: all 0.2s linear, transform 0.4s linear;
 }
 
+.home .intro .btn-codepoint img{
+    width: 30px;
+}
+
 .home  .intro .btn-codepoint:hover {
-    background-color: #fff;
-    color: var(--colorpadrao);
+    background-color: #239b3f;
+    color: #fff;
     transform: translateY(-2px);
 }
 
@@ -796,7 +806,8 @@ footer a:hover {
         justify-content: space-between;
     }
     .header nav .menu a{
-        font-size: 12px;
+        font-size: 17px;
+        line-height: 30px;
     }
     .header .logo{
         display: none;
@@ -810,32 +821,97 @@ footer a:hover {
     .header .intro p {
         font-size: 14px;
     }
+    .header nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header .contact-btn{
+        display: none;
+    }
+
+
+
+    .home .intro{
+        margin-top: 30px;
+        left: 44%
+    }
+    
+    .home  .intro .btn-codepoint{
+        padding: 10px 40px;
+        font-size: 14px;
+        width: 300px;
+        font-weight: 500;
+        font-family: var(--fontpadrao);
+    }
+
+
+
+
+
+
 
     
 
+    /*carrocel*/
+    .caroucel-mod{
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .caroucel-mod picture ul{
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 10px 50%;
+    }
+    
+    .caroucel-mod picture ul li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .caroucel-mod picture ul li img{
+        width: 30px;
+    }
+
+    
+
+
+    
     .about .content,
     .services .content{
         flex-direction: column;
     }
 
     .about .content img{
-        width: 50%;
+        width: 30%;
         margin: auto;
     }
 
     .about .content .text p {
         margin-top: 20px;
         text-align: left;
-        font-size: 14px;
-    }
-
-    .header nav {
-        flex-direction: column;
-        padding: 10px;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 1px;
     }
 
 
+    .about .content .text .download-btn{
+        margin-top: 70px;
+    }
 
+
+    .about h2,
+    .services h2 {
+        font-size: 20px;
+    }
     
 
     .services .service{
