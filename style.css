@@ -69,6 +69,12 @@ body {
 }
 
 
+.header .logo{
+    display: block;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
 .header nav {
     display: flex;
     justify-content: space-between;
@@ -834,7 +840,7 @@ footer a:hover {
 
     .home .intro{
         margin-top: 30px;
-        left: 44%
+        left:50%;
     }
     
     .home  .intro .btn-codepoint{
@@ -912,10 +918,15 @@ footer a:hover {
     .services h2 {
         font-size: 20px;
     }
+
+    .services {
+        height: 150vh;
+        margin: 100px 0;
+    }
     
 
     .services .service{
-        height: 200px;
+        height: 230px;
     }
 
 
