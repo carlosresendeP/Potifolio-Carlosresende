@@ -110,5 +110,14 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/pagina-de-vendas",
         linkSite: "https://carlosresendep.github.io/pagina-de-vendas/",
         Progress: true,
+    },
+
+    {
+        img: "./assets/capas/Capa-codepoint-new.png",
+        titulo: "Code Point",
+        tech: "HTML, CSS, JavaScript",
+        linkFont: "https://github.com/carlosresendeP/CodePoint",
+        linkSite: "https://carlosresendep.github.io/CodePoint/",
+        Progress: true,
     }
 ];
