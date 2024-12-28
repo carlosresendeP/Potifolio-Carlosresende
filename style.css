@@ -20,7 +20,7 @@ html{
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--fontpadrao);
     background-color: #1b1b2f;
     color: var(--colorwhite);
 }
@@ -329,11 +329,27 @@ body {
 
 .about .content .text {
     max-width: 600px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
 }
 
 .about .content .text p {
+    font-family: var(--fontpadrao);
+    font-size: 15px;
     margin-bottom: 20px;
+    font-weight: 400;
+    
 }
+
+.about .content .text .info {
+    color: var(--colorpadrao);
+}
+
+.about .content .text .info strong{
+    color: var(--colorwhite)
+}
+
 
 .about .content .text p span {
     font-weight: 500;
@@ -417,9 +433,9 @@ body {
 }
 
 .services .service:hover {
-    transform: translateY(-5px);
+    transform: translateY(10px);
     /* Levanta o cartão ao passar o mouse */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 20px rgba(155, 0, 0, 0.459);
     /* Aumenta a sombra ao passar o mouse */
 }
 
@@ -430,17 +446,18 @@ body {
 }
 
 .services .service h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
     /* Cor do texto do título */
 }
 
 .services .service p {
-    font-size: 15px;
+    font-size: 13px;
     color: #ffffff;
     /* Cor do texto da descrição */
     letter-spacing: 1px;
     text-align: center;
+
 }
 
 
