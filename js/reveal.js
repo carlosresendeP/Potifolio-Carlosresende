@@ -55,7 +55,7 @@ const scrollToTop = ScrollReveal().reveal('.revealToTop',{
 
 
 const scrolldelayTech = ScrollReveal().reveal('.revealDelayTech',{
-    origin: 'top', // A animação começa de baixo
+    origin: 'left', // A animação começa de baixo
     distance: '60px', // Distância do movimento
     duration: 1000, // Duração da animação em milissegundos
     delay: 100, // Delay entre as animações
@@ -97,4 +97,22 @@ const scrolldelayTech5 = ScrollReveal().reveal('.revealDelayTech5',{
     delay: 500, // Delay entre as animações
     reset: true // Não reseta a animação quando o elemento sai da tela
 
+})
+
+const scrolldelayTech6 = ScrollReveal().reveal('.revealDelayTech6',{
+    origin: 'bottom', // A animação começa de baixo
+    distance: '60px', // Distância do movimento
+    duration: 1000, // Duração da animação em milissegundos
+    delay: 600, // Delay entre as animações
+    reset: true, // Não reseta a animação quando o elemento sai da tela
+    
+})
+
+const scrolldelayTech7 = ScrollReveal().reveal('.revealDelayTech7',{
+    origin: 'right', // A animação começa de baixo
+    distance: '60px', // Distância do movimento
+    duration: 1000, // Duração da animação em milissegundos
+    delay: 700, // Delay entre as animações
+    reset: true, // Não reseta a animação quando o elemento sai da tela
+    
 })

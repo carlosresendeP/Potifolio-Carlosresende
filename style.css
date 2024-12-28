@@ -186,7 +186,7 @@ body {
 }
 
 .home .intro h1 {
-    font-size: 48px;
+    font-size: 26px;
     margin: 20px 0 10px;
     color: var(--colorpadrao);
 }
@@ -221,6 +221,7 @@ body {
     background-color: #239b3f;
     color: #fff;
     transform: translateY(-2px);
+    box-shadow: 0 0 15px #239b3fbb ;
 }
 
 .home  .intro .btn-codepoint:active{
@@ -240,31 +241,47 @@ body {
 
 .caroucel-mod{
     width: 100%;
-    height: 120px;
-    background-color: var(--colorfundo);
+    height: auto;
+    background-color: transparent;
+    position: relative;
 }
-.caroucel-mod p{
+.caroucel-mod picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.caroucel-mod .list-tech{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+    list-style: none;
+
+}
+
+.caroucel-mod picture ul .tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.caroucel-mod .tech-text{
     font-family: var(--fontpadrao);
     font-weight: 600;
     letter-spacing: 3px;
     color: #fff;
     opacity: 0.7;
+    transform: scale(0);
 }
-
-.caroucel-mod picture ul{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 30px;
-}
-
-.caroucel-mod picture ul li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.caroucel-mod .tech-text.active{
+    visibility: visible;
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
 }
 
 .caroucel-mod picture ul li img{
@@ -290,8 +307,10 @@ body {
 /*main*/
 
 .about{
-    height: 100vh;
-    width: 100%;
+    height: 70vh;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 15px;
 }
 
 .about,
@@ -328,7 +347,7 @@ body {
 }
 
 .about .content .text {
-    max-width: 600px;
+    max-width: 1000px;
     line-height: 20px;
     letter-spacing: 2px;
 
@@ -886,25 +905,37 @@ footer a:hover {
 
     /*carrocel*/
     .caroucel-mod{
-        height: 170px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: space-around;
+        padding: 10px;
+        margin: 10px auto;
     }
-    
-    .caroucel-mod picture ul{
-        display: grid;
-        list-style: none;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: 10px 50%;
-    }
-    
-    .caroucel-mod picture ul li{
+
+    .caroucel-mod picture{
+        margin: 0px auto;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        gap: 20px;
+        justify-content: center;
+    }
+    
+    .caroucel-mod .list-tech{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        list-style: none;
+    
+    }
+    
+    .caroucel-mod picture ul .tech{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
     }
     
     .caroucel-mod picture ul li img{

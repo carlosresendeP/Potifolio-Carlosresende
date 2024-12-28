@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- scrollreveal -->
     <link rel="stylesheet" href="style.css">
@@ -24,7 +25,7 @@
 
         <nav>
             <div class="logo">
-                <a href="#">CarlosResende.com</a>
+                <a href="#"> <i class="fa-solid fa-code"></i> Carlos Resende</a>
             </div>
             <div class="menu">
                 <a href="#home">Home</a>
@@ -71,46 +72,60 @@
 
         <div class="caroucel-mod">
             <picture>
-                <ul>
-                    <li class="revealDelayTech">
+                <ul class="list-tech">
+                    <li class="revealDelayTech tech">
                         <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png" width="50"
                             alt="logo-html">
-                        <p>HTML</p>
+                        <p class="tech-text">HTML</p>
                     </li>
 
-                    <li class="revealDelayTech2">
+                    <li class="revealDelayTech2 tech">
                         <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" width="40" alt="logo-css">
-                        <p>CSS</p>
+                        <p class="tech-text">CSS</p>
                     </li>
 
-                    <li class="revealDelayTech3">
+                    <li class="revealDelayTech3 tech">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="50"
                             alt="logo-javascript">
-                        <p>JavaScript</p>
+                        <p class="tech-text">JavaScript</p>
                     </li>
 
-                    <li class="revealDelayTech4">
+                    <li class="revealDelayTech4 tech">
                         <img src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png"
                             width="46" alt="logo-react">
-                        <p>React</p>
+                        <p class="tech-text">React</p>
                     </li>
 
-                    <li class="revealDelayTech5">
+                    <li class="revealDelayTech5 tech">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
                             width="100" alt="logo-node">
-                        <p>Node Js</p>
+                        <p class="tech-text">Node.js</p>
                     </li>
+
+                    <li class="revealDelayTech6 tech">
+                        <img src="https://img.icons8.com/color/512/git.png" width="70" alt="logo-git">
+                        <p class="tech-text">Git</p>
+                    </li>
+
+                                        
+                    <li class="revealDelayTech7">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"
+                        width="55" alt="logo-figma">
+                        <p class="tech-text">Figma</p>
+                    </li>
+
+                    
                 </ul>
             </picture>
         </div>
 
         <section class="about reveal" id="about">
-            <h2>Descubra <span> sobre mim</span></h2>
+            <h2><span> Sobre</span></h2>
             <div class="content">
-                <img alt="Portrait of Carlos" height="300" src="assets/photo-perfil.png" width="300" />
+                <!--  <img alt="Portrait of Carlos" height="300" src="assets/photo-perfil.png" width="300" />-->
                 <div class="text">
-                    <p>Sou [Seu Nome], um programador web dedicado a desenvolver soluções modernas e eficientes para
-                        realçar a sua presença na internet.</p>
+                    <p>Sou Carlos, um programador web dedicado a desenvolver soluções modernas e eficientes para
+                    realçar a sua presença na internet.</p>
 
                     <p>Aqui, minha meta é converter conceitos em sites únicos e de grande impacto. Utilizo tecnologias
                         como HTML, CSS, JavaScript e frameworks contemporâneos para proporcionar um design responsivo,
@@ -125,7 +140,7 @@
 
 
 
-                    <div class="info">
+                    <!--  <div class="info">
                         <div>
                             <p><strong>Nome:</strong> Carlos Resende</p>
                             <p><strong>Cel:</strong> +55 32 9 9828-3189</p>
@@ -137,7 +152,7 @@
                             <p><strong>Address:</strong> Juiz de Fora, MG, Brazil</p>
                             <p><strong>Freelance:</strong> Disponivel</p>
                         </div>
-                    </div>
+                    </div>-->
                     <!--  <a class="download-btn" href="assets/Curriculo Carlos.pdf">DOWNLOAD CV</a>-->
                 </div>
             </div>
@@ -148,22 +163,18 @@
             <div class="content">
                 <article class="service reveal">
                     <i class="fas fa-paint-brush"></i>
-                    <h3>Criação de Sites Personalizados</h3>
-                    <p>Desenvolvo websites sob medida, com design exclusivo e funcionalidade personalizada para atender
-                        às suas necessidades. Garanto que seu site terá uma identidade visual única e alinhada ao seu
-                        público-alvo.</p>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Desenvolvo websites sob medida, com design exclusivo e funcionalidade personalizada para atender às suas necessidades. Garanto que seu site terá uma identidade visual única e alinhada ao seu público-alvo.</p>
                 </article>
                 <article class="service revealDelay300">
                     <i class="fas fa-bullhorn"></i>
                     <h3> Landing Pages de Conversão</h3>
-                    <p>Desenvolvo landing pages focadas em captar leads e aumentar suas conversões. Com design
-                        estratégico, seu público será direcionado para tomar ações específicas de forma eficaz.</p>
+                    <p>Transformo layouts e designs em interfaces interativas e funcionais, garantindo que seu site ou aplicação tenha uma experiência visual atraente e uma navegação fluida. Trabalho com as tecnologias mais modernas como o React para criar páginas rápidas, responsivas e otimizadas para diferentes dispositivos.</p>
                 </article>
                 <article class="service revealDelay500">
                     <i class="fas fa-desktop"></i>
                     <h3>Interface do usuário</h3>
-                    <p>Interfaces modernas e intuitivas, com foco na experiência do usuário. Garanta que seu público
-                        tenha uma navegação fluida e envolvente, combinando funcionalidade e estética..</p>
+                    <p>Crio interfaces visuais modernas, intuitivas e atraentes, focadas em proporcionar a melhor experiência para seus usuários. Alinho estética e funcionalidade para que seu site ou aplicação não apenas se destaque, mas também seja fácil de navegar e usar.</p>
                 </article>
             </div>
         </section>
