@@ -23,14 +23,14 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Conversor-de-Moedas/",
         Progress: false,
     },
-    {
+    /*{
         img: "./assets/capas/capa-site-Devcar.png",
         titulo: "Dev Car",
         tech: "HTML, CSS",
         linkFont: "https://github.com/carlosresendeP/projeto-loja-de-carro",
         linkSite: "https://carlosresendep.github.io/projeto-loja-de-carro/",
         Progress: true,
-    },
+    },*/
     {
         img: "./assets/capas/Capa-site-previsão.png",
         titulo: "Previsão do Tempo",
@@ -106,18 +106,18 @@ const myprojects = [
     {
         img: "./assets/capas/capa-golden.png",
         titulo: "Página de Vendas ",
-        tech: "HTML, CSS, ",
+        tech: "HTML, CSS, Javascript",
         linkFont: "https://github.com/carlosresendeP/pagina-de-vendas",
         linkSite: "https://carlosresendep.github.io/pagina-de-vendas/",
         Progress: true,
     },
 
     {
-        img: "./assets/capas/Capa-codepoint-new.png",
+        img: "./assets/capas/capa-architectural.png",
         titulo: "Code Point",
         tech: "HTML, CSS, JavaScript",
-        linkFont: "https://github.com/carlosresendeP/CodePoint",
-        linkSite: "https://carlosresendep.github.io/CodePoint/",
+        linkFont: "https://github.com/carlosresendeP/Architectural-Designer",
+        linkSite: "https://carlosresendep.github.io/Architectural-Designer/",
         Progress: true,
     }
 ];
