@@ -119,5 +119,14 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Architectural-Designer",
         linkSite: "https://carlosresendep.github.io/Architectural-Designer/",
         Progress: true,
+    },
+
+    {
+        img: "./assets/capas/capa-astreus-academia.png",
+        titulo: "Astraeus Academia",
+        tech: "HTML, CSS, JavaScript",
+        linkFont: "https://github.com/carlosresendeP/Astraeus-Academia",
+        linkSite: "https://carlosresendep.github.io/Astraeus-Academia/",
+        Progress: false,
     }
 ];
