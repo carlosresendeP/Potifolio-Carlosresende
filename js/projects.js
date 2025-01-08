@@ -128,5 +128,14 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Astraeus-Academia",
         linkSite: "https://carlosresendep.github.io/Astraeus-Academia/",
         Progress: false,
+    },
+
+    {
+        img: "./assets/capas/capa-decora-e-conforto.png",
+        titulo: "Decora & Conforto",
+        tech: "HTML, CSS, JavaScript",
+        linkFont: "https://github.com/carlosresendeP/Decora-Conforto-Moveis-Decoracao",
+        linkSite: "https://carlosresendep.github.io/Decora-Conforto-Moveis-Decoracao/",
+        Progress: false,
     }
 ];
