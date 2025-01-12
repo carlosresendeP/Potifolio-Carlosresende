@@ -640,16 +640,16 @@ body {
 }
 
 .projects .project-card {
-    background-color: var(--colorsecundary);
+    background-color:var(--colorsecundary);
     padding: 6px 10px;
     border-radius: 10px;
     width: 100%;
     height: auto;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
     /* Efeito suave ao passar o mouse */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.342);
     /* Sombra suave */
     display: flex;
     align-items: center;
@@ -660,8 +660,24 @@ body {
 .projects .project-card:hover {
     transform: translateY(-6px);
     /* Aumenta o projeto ao passar o mouse */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 0px 20px #e94560;
     /* Aumenta a sombra ao passar o mouse */
+
+    animation:  0.5s boxShadown forwards;
+}
+
+@keyframes boxShadown {
+    0% {
+        box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0px 20px #e9456067;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #e94560;
+    }
 }
 
 .project-image {

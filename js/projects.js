@@ -63,13 +63,14 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Calculadora/",
         Progress: false,
     },
-    {
+    /*{
         img: "./assets/capas/capa-nature.png",
         titulo: "Nature.co",
         tech: "HTML, CSS",
         linkFont: "https://github.com/carlosresendeP/Projeto-nature-Site",
-        linkSite: "https://carlosresendep.github.io/Projeto-nature-Site/",        Progress: true,
-    },
+        linkSite: "https://carlosresendep.github.io/Projeto-nature-Site/",
+        Progress: true,
+    },*/
     {
         img: "./assets/capas/capa CodeStrategy.png",
         titulo: "Code Strategy",
@@ -114,7 +115,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-architectural.png",
-        titulo: "Code Point",
+        titulo: "Architectural Designer",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Architectural-Designer",
         linkSite: "https://carlosresendep.github.io/Architectural-Designer/",
@@ -137,5 +138,14 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Decora-Conforto-Moveis-Decoracao",
         linkSite: "https://carlosresendep.github.io/Decora-Conforto-Moveis-Decoracao/",
         Progress: false,
+    },
+
+    {
+        img: "./assets/capas/capa-dentista-landing-page.png",
+        titulo: "Dentista landing page",
+        tech: "HTML, CSS, JavaScript",
+        linkFont: "https://github.com/carlosresendeP/Site-para-dentista",
+        linkSite: "https://carlosresendep.github.io/Site-para-dentista/",
+        Progress: true,
     }
 ];
