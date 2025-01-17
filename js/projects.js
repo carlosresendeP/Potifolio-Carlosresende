@@ -40,6 +40,14 @@ const myprojects = [
         Progress: false,
     },
     {
+        img: "./assets/capas/capa-calculadora.png",
+        titulo: "Calculadora",
+        tech: "HTML, CSS, JAVASCRIPT",
+        linkFont: "https://github.com/carlosresendeP/Calculadora",
+        linkSite: "https://carlosresendep.github.io/Calculadora/",
+        Progress: false,
+    },
+    {
         img: "./assets/capas/capa-slider.png",
         titulo: "Slider Paradise",
         tech: "HTML, CSS, JAVASCRIPT",
@@ -55,22 +63,15 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Devclub-tesla/",
         Progress: false,
     },
+
     {
-        img: "./assets/capas/capa-calculadora.png",
-        titulo: "Calculadora",
-        tech: "HTML, CSS, JAVASCRIPT",
-        linkFont: "https://github.com/carlosresendeP/Calculadora",
-        linkSite: "https://carlosresendep.github.io/Calculadora/",
+        img: "./assets/capas/capa-projeto-justly.png",
+        titulo: "Projeto Justly Advogados",
+        tech: "HTML, CSS",
+        linkFont: "https://github.com/carlosresendeP/Projeto-justly",
+        linkSite: "https://carlosresendep.github.io/Projeto-justly/",
         Progress: false,
     },
-    /*{
-        img: "./assets/capas/capa-nature.png",
-        titulo: "Nature.co",
-        tech: "HTML, CSS",
-        linkFont: "https://github.com/carlosresendeP/Projeto-nature-Site",
-        linkSite: "https://carlosresendep.github.io/Projeto-nature-Site/",
-        Progress: true,
-    },*/
     {
         img: "./assets/capas/capa CodeStrategy.png",
         titulo: "Code Strategy",
