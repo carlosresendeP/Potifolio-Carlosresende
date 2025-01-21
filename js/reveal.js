@@ -109,6 +109,15 @@ const scrolldelayTech6 = ScrollReveal().reveal('.revealDelayTech6',{
 })
 
 const scrolldelayTech7 = ScrollReveal().reveal('.revealDelayTech7',{
+    origin: 'top', // A animação começa de baixo
+    distance: '60px', // Distância do movimento
+    duration: 1000, // Duração da animação em milissegundos
+    delay: 700, // Delay entre as animações
+    reset: true, // Não reseta a animação quando o elemento sai da tela
+    
+})
+
+const scrolldelayTech8 = ScrollReveal().reveal('.revealDelayTech8',{
     origin: 'right', // A animação começa de baixo
     distance: '60px', // Distância do movimento
     duration: 1000, // Duração da animação em milissegundos

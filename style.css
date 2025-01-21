@@ -244,6 +244,12 @@ body {
     height: auto;
     background-color: transparent;
     position: relative;
+    text-align: center;
+}
+.caroucel-mod h3{
+    font-size: 26px;
+    margin: 10px 5%;
+    color: var(--colorpadrao);
 }
 .caroucel-mod picture{
     display: flex;

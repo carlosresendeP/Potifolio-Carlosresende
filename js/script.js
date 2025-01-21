@@ -66,6 +66,9 @@ listTech.forEach((tech, index)=>{
         if(index === 6){
             textTech[6].classList.add("active")
         }
+        if(index === 7){
+            textTech[7].classList.add("active")
+        }
         
     });
     tech.addEventListener("mouseout", ()=>{
@@ -90,6 +93,9 @@ listTech.forEach((tech, index)=>{
         }
         if(index === 6){
             textTech[6].classList.remove("active")
+        }
+        if(index === 7){
+            textTech[7].classList.remove("active")
         }
     })
 })

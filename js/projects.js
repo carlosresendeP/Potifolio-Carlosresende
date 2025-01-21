@@ -49,7 +49,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-slider.png",
-        titulo: "Slider Paradise",
+        titulo: "Dev Slider",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Slider-Paradise",
         linkSite: "https://cityofworld.netlify.app/",
@@ -90,7 +90,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-traduto-codepoint.png",
-        titulo: "Tradutor CodePoint",
+        titulo: "Tradutor",
         tech: "HTML, REACT, TAILWINDCSS, JAVASCRIPT, API",
         linkFont: "https://github.com/carlosresendeP/Tradutor-CodePoint",
         linkSite: "https://tradutor-code-point.vercel.app/",
@@ -116,7 +116,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-architectural.png",
-        titulo: "Architectural Designer",
+        titulo: "Site para Arquitetura",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Architectural-Designer",
         linkSite: "https://carlosresendep.github.io/Architectural-Designer/",
@@ -143,7 +143,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-dentista-landing-page.png",
-        titulo: "Dentista landing page",
+        titulo: "Landing page para Dentista",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Site-para-dentista",
         linkSite: "https://carlosresendep.github.io/Site-para-dentista/",
