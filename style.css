@@ -354,9 +354,8 @@ body {
 
 .about .content .text {
     max-width: 1000px;
-    line-height: 20px;
+    line-height: 150%;
     letter-spacing: 2px;
-
 }
 
 .about .content .text p {
@@ -377,8 +376,8 @@ body {
 
 
 .about .content .text p span {
-    font-weight: 500;
     color: var(--colorpadrao);
+    font-weight: 700;
 }
 
 .about .content .text .info {
@@ -659,8 +658,10 @@ body {
     /* Sombra suave */
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     text-align: center;
+    min-height: 100%;
 }
 
 .projects .project-card:hover {

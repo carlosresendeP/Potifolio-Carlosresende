@@ -125,7 +125,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-astreus-academia.png",
-        titulo: "Astraeus Academia",
+        titulo: "Dev Academia",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Astraeus-Academia",
         linkSite: "https://carlosresendep.github.io/Astraeus-Academia/",
@@ -148,5 +148,15 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Site-para-dentista",
         linkSite: "https://carlosresendep.github.io/Site-para-dentista/",
         Progress: true,
-    }
+    },
+
+    {
+        img: "./assets/capas/thumb-barberdev.png",
+        titulo: "BarberDev",
+        tech: "HTML, CSS, SASS, JavaScript",
+        linkFont: "https://github.com/carlosresendeP/Projeto-Barber-shop",
+        linkSite: "https://barberdev-ten.vercel.app/",
+        Progress: false,
+    },
+
 ];
