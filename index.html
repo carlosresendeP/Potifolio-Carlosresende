@@ -28,12 +28,12 @@
                 <a href="#"> <i class="fa-solid fa-code"></i> Carlos Resende</a>
             </div>
             <div class="menu">
-                <a href="#home">Home</a>
-                <a href="#about">Sobre</a>
-                <a href="#services">Serviços</a>
+                <a href="#home" class="Link-header">Home</a>
+                <a href="#about" class="Link-header" >Sobre</a>
+                <a href="#services" class="Link-header">Serviços</a>
                 <!--  <a href="#princing">Planos</a>-->
-                <a href="#projects">Projetos</a>
-                <a href="#contact">Contato</a>
+                <a href="#projects" class="Link-header">Projetos</a>
+                <a href="#contact" class="Link-header">Contato</a>
             </div>
             <a class="contact-btn"
                 href="https://wa.me/5532998283189?text=Quero%20fazer%20um%20or%C3%A7amento%20de%20um%20website!%20"
@@ -281,13 +281,24 @@
 
     <footer>
 
-        <div class="footer-content " id="footer">
-            <h2>Contato</h2>
-            <p>Email: dev.carlosresende@hotmail.com</p>
-            <p>Tel: +55 32 9 9828-3189</p>
-            <p>Siga-me<a href="https://www.linkedin.com/in/carlos-paula2001/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn</a> and <a href="https://github.com/carlosresendeP" target="_blank"
-                    rel="noopener noreferrer">GitHub</a></p>
+        <div class="footer-container">
+            <div class="footer-content " id="footer">
+                <h2>Contato</h2>
+                <p>Email: dev.carlosresende@hotmail.com</p>
+                <p>Tel: +55 32 9 9828-3189</p>
+                <p>Siga-me<a href="https://www.linkedin.com/in/carlos-paula2001/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn</a> and <a href="https://github.com/carlosresendeP" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></p>
+            </div>
+            <div class="footer-form">
+                <form onsubmit="FormWhatsApp(event)">
+                    <h2>Envie-me uma mensagem</h2>
+                    <input type="text" placeholder="Nome" required id="name">
+                    <input type="email" placeholder="Email" required id="email">
+                    <textarea placeholder="Mensagem" required id="message"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
         <p class="credit-text"> &copy; <span class="date"></span> Site desenvolvido por Carlos Resende</p>
     </footer>
@@ -299,3 +310,4 @@
 <script src="./js/projects.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/reveal.js"></script>
+<script src="js/FormLogic.js"></script>
