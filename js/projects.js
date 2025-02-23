@@ -99,7 +99,7 @@ const myprojects = [
     {
         img: "./assets/capas/Capa-cad-usuarios.png",
         titulo: "Cadastros de Usuários",
-        tech: "HTML, REACT, ST YLED COMPONENTS, JAVASCRIPT, API, NODE JS, MONGO-DB",
+        tech: "HTML, REACT, STYLED COMPONENTS, JAVASCRIPT, API, NODE JS, MONGO-DB",
         linkFont: "https://github.com/carlosresendeP/Cadastros-de-usuarios",
         linkSite: "https://cadastros-de-usuarios.vercel.app/",
         Progress: false,
@@ -158,5 +158,14 @@ const myprojects = [
         linkSite: "https://barberdev-ten.vercel.app/",
         Progress: false,
     },
+
+    {
+        img: "./assets/capas/capa-project-nexcent.png",
+        titulo: "Projeto Nexcent",
+        tech: "HTML, REACT, STYLED COMPONENTS, JAVASCRIPT",
+        linkFont: "https://github.com/carlosresendeP/project-Nexcent",
+        linkSite: "https://project-nexcent-theta.vercel.app/",
+        Progress: false,
+    }
 
 ];
