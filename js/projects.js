@@ -1,6 +1,7 @@
 const myprojects = [
     {
         img: "./assets/capas/capa-relogio.png",
+        description: "projeto de um relógio digital",
         titulo: "Relógio Digital",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Relogio-Digital",
@@ -9,6 +10,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-devclub-coffe.png",
+        description: "projeto de um site de café fictício",
         titulo: "DevClub Coffe",
         tech: "HTML, CSS",
         linkFont: "https://github.com/carlosresendeP/Devclub-coffe",
@@ -17,6 +19,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-conversor-de-moedas.png",
+        description: "projeto de um conversor de moedas",
         titulo: "Conversor de Moedas",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Conversor-de-Moedas",
@@ -33,6 +36,7 @@ const myprojects = [
     },*/
     {
         img: "./assets/capas/Capa-site-previsão.png",
+        description: "Projeto de site previsão do tempo",
         titulo: "Previsão do Tempo",
         tech: "HTML, CSS, JAVASCRIPT, API",
         linkFont: "https://github.com/carlosresendeP/app-previsao-do-tempo",
@@ -41,6 +45,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-calculadora.png",
+        description: "projeto de uma calculadora",
         titulo: "Calculadora",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Calculadora",
@@ -49,6 +54,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-slider.png",
+        description: "projeto de um slider",
         titulo: "Dev Slider",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Slider-Paradise",
@@ -57,6 +63,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-tesla.png",
+        description: "projeto de um site da tesla",
         titulo: "Dev Club Tesla",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Devclub-tesla",
@@ -66,6 +73,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-projeto-justly.png",
+        description: "projeto de um site de advogados copia do justly",
         titulo: "Projeto Justly Advogados",
         tech: "HTML, CSS",
         linkFont: "https://github.com/carlosresendeP/Projeto-justly",
@@ -74,6 +82,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa CodeStrategy.png",
+        description: "projeto de um site de estratégia de código",
         titulo: "Code Strategy",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Code-Strategy",
@@ -82,6 +91,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-dev-burguer.png",
+        description: "projeto de um site siples de hamburgueria fictícia com o navbar animado",
         titulo: "Burger Store",
         tech: "HTML, CSS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/Projeto-Menu-DevBurger",
@@ -90,6 +100,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/capa-traduto-codepoint.png",
+        description: "projeto de um tradutor de linguas totalmente funcional",
         titulo: "Tradutor",
         tech: "HTML, REACT, TAILWINDCSS, JAVASCRIPT, API",
         linkFont: "https://github.com/carlosresendeP/Tradutor-CodePoint",
@@ -98,6 +109,7 @@ const myprojects = [
     },
     {
         img: "./assets/capas/Capa-cad-usuarios.png",
+        description: "projeto de um cadastro de usuários com o objetivo de treinar o uso de API",
         titulo: "Cadastros de Usuários",
         tech: "HTML, REACT, STYLED COMPONENTS, JAVASCRIPT, API, NODE JS, MONGO-DB",
         linkFont: "https://github.com/carlosresendeP/Cadastros-de-usuarios",
@@ -107,6 +119,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-golden.png",
+        description: "projeto de um site de vendas aleatório",
         titulo: "Página de Vendas ",
         tech: "HTML, CSS, Javascript",
         linkFont: "https://github.com/carlosresendeP/pagina-de-vendas",
@@ -116,6 +129,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-architectural.png",
+        description: "projeto de um site para arquitetura",
         titulo: "Site para Arquitetura",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Architectural-Designer",
@@ -125,6 +139,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-astreus-academia.png",
+        description: "projeto de um site para academia",
         titulo: "Dev Academia",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Astraeus-Academia",
@@ -134,6 +149,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-decora-e-conforto.png",
+        description: "projeto de um site de moveis e decoração",
         titulo: "Decora & Conforto",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Decora-Conforto-Moveis-Decoracao",
@@ -143,6 +159,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-dentista-landing-page.png",
+        description: "projeto de uma landing page para dentista",
         titulo: "Landing page para Dentista",
         tech: "HTML, CSS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Site-para-dentista",
@@ -152,6 +169,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/thumb-barberdev.png",
+        description: "projeto de um site para barbearia",
         titulo: "BarberDev",
         tech: "HTML, CSS, SASS, JavaScript",
         linkFont: "https://github.com/carlosresendeP/Projeto-Barber-shop",
@@ -161,6 +179,7 @@ const myprojects = [
 
     {
         img: "./assets/capas/capa-project-nexcent.png",
+        description: "projeto de um site para uma empresa fictícia, com o objetivo de treinar o react",
         titulo: "Projeto Nexcent",
         tech: "HTML, REACT, STYLED COMPONENTS, JAVASCRIPT",
         linkFont: "https://github.com/carlosresendeP/project-Nexcent",

@@ -657,6 +657,14 @@ body {
     color: var(--colorpadrao);
 
 }
+.project-card .description{
+    font-size: 12px;
+    margin: 10px 0;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    opacity: 0.7;
+    text-transform: capitalize;
+}
 
 .projects .content-projects {
     display: grid;
@@ -783,6 +791,7 @@ footer {
     color: #ffffff;
     padding: 30px 100px;
     text-align: center;
+    width: 100%;
 }
 
 footer .footer-container{
@@ -790,6 +799,7 @@ footer .footer-container{
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 footer h2 {
@@ -797,8 +807,35 @@ footer h2 {
     margin-bottom: 15px;
 }
 
+.footer-content h3{
+    font-size: 20px;
+    color: var(--colorwhite);
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    width: 60%;
+}
+
+.footer-content .description{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 80%;
+}
+
 footer .footer-content p {
     margin: 5px 0;
+}
+
+footer .footer-form{
+    width: 30%;
 }
 
 footer .footer-form form{

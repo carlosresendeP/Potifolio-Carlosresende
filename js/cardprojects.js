@@ -16,6 +16,7 @@ function showProjects(projects){
         listProject +=`
         <div class="project-card reveal">
         <img src="${project.img}" alt="Imagem do Projeto 1" class="project-image">
+        <p class='description'>${project.description}</p>
         <h3 class="project-title">${project.titulo}</h3>
         <p class="technologies">${project.tech}</p>
 
@@ -33,6 +34,7 @@ function showProjects(projects){
         listProject +=`
         <div class="project-card reveal">
         <img src="${project.img}" alt="Imagem do Projeto 1" class="project-image">
+        <p class='description'>${project.description}</p>
         <h3 class="project-title">${project.titulo}</h3>
         <p class="technologies">${project.tech}</p>
 
