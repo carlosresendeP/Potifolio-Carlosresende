@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Desenvolvedor</title>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,310 +16,219 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- scrollreveal -->
-    <link rel="stylesheet" href="style.css">
-    <title>Portfólio Carlos Resende</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header class="header" id="home">
-
-
-
-        <nav>
-            <div class="logo">
-                <a href="#"> <i class="fa-solid fa-code"></i> Carlos Resende</a>
-            </div>
-            <div class="menu">
-                <a href="#home" class="Link-header">Home</a>
-                <a href="#about" class="Link-header" >Sobre</a>
-                <a href="#services" class="Link-header">Serviços</a>
-                <!--  <a href="#princing">Planos</a>-->
-                <a href="#projects" class="Link-header">Projetos</a>
-                <a href="#contact" class="Link-header">Contato</a>
-            </div>
-            <a class="contact-btn"
-                href="https://wa.me/5532998283189?text=Quero%20fazer%20um%20or%C3%A7amento%20de%20um%20website!%20"
-                target="_blank">Contato <img src="assets/whatsapp-icon.svg" alt="whatzap-icon"
-                    rel="noopener noreferrer"></a>
-        </nav>
-
+    <!-- Header e Navegação -->
+    <header class="header">
+        <div class="container">
+            <nav>
+                <div class="logo">Carlos<span>Resende</span></div>
+                <ul class="nav-links">
+                    <li><button class="themes"> <i class="fas fa-moon"> </i></button></li>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="menu-toggle">&#9776;</div>
+            </nav>
+        </div>
     </header>
 
-    <div class="alert-message">
-        <p>Não é possivel contratar no momento!</p>
-    </div>
+    <!-- Seção Hero -->
+    <section class="hero" id="home">
 
-
-
-    <main>
-
-        <section id="home" class="home ">
-            <div class="overlay"></div>
-
-            <div class="background revealToTop"></div>
-
-            <div class="intro reveal">
-                <img alt="Perfil do Carlos Resende" height="150" src="assets/photo-perfil.png" width="150"
-                    class="photo-perfil" />
-                <h1>Carlos Resende</h1>
-                <p>Desenvolvedor Front-End & Programador Web</p>
-                <a href="https://wa.me/5532998283189?text=Quero%20fazer%20um%20or%C3%A7amento%20de%20um%20website!%20"
-                    class="btn-codepoint" target="_blank" rel="noopener noreferrer">Entre em
-                    Contato <img src="assets/whatsapp-icon.svg" alt="whatzap-icon" rel="noopener noreferrer"></a>
-
-
-            </div>
-
-        </section>
-
-        <div class="caroucel-mod">
-            <!--  <h3>Tecnologias</h3>-->
-            <picture>
-                <ul class="list-tech">
-                    <li class="revealDelayTech tech">
-                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png" width="50"
-                            alt="logo-html">
-                        <p class="tech-text">HTML</p>
-                    </li>
-
-                    <li class="revealDelayTech2 tech">
-                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" width="40" alt="logo-css">
-                        <p class="tech-text">CSS</p>
-                    </li>
-
-                    <li class="revealDelayTech3 tech">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="50"
-                            alt="logo-javascript">
-                        <p class="tech-text">JavaScript</p>
-                    </li>
-
-                    <li class="revealDelayTech4 tech">
-                        <img src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png"
-                            width="46" alt="logo-react">
-                        <p class="tech-text">React</p>
-                    </li>
-
-                    <li class="revealDelayTech5 tech">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
-                            width="100" alt="logo-node">
-                        <p class="tech-text">Node.js</p>
-                    </li>
-
-                    <li class="revealDelayTech6 tech">
-                        <img src="https://img.icons8.com/color/512/git.png" width="60" alt="logo-git">
-                        <p class="tech-text">Git</p>
-                    </li>
-                                            
-                    <li class="revealDelayTech7 tech">
-                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="50" alt="logo-git">
-                        <p class="tech-text">Figma</p>
-                    </li>
-
-                    <li class="revealDelayTech8 tech">
-                        <img src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" width="60" alt="logo-git">
-                        <p class="tech-text">Bootstrap</p>
-                    </li>
-
-                    <li class="revealDelayTech9 tech">
-                        <img src="https://img.icons8.com/color/512/sass.png" width="80" alt="logo-git">
-                        <p class="tech-text">Sass</p>
-                    </li>
-
-                    
-                </ul>
-            </picture>
+        <div class="hero-bg">
         </div>
 
-        <section class="about reveal" id="about">
-            <h2><span> Sobre</span></h2>
-            <div class="content">
-                <!--  <img alt="Portrait of Carlos" height="300" src="assets/photo-perfil.png" width="300" />-->
-                <div class="text">
-                    <p>Sou um Desenvolvedor Front-End Júnior na área de Tecnologia da Informação, fascinado pela criação de experiências digitais cativantes e eficientes. Possuo  experiência em <span>HTML, CSS</span> e <span>JavaScript</span>, concentrando-me na criação de interfaces interativas, responsivas e em conformidade com as melhores práticas de design e usabilidade. 
-                    <br>
-                    Possuo habilidades em frameworks contemporâneos, como o <span class="highlight">React</span>, bem como domínio sobre animações e efeitos visuais (sombras, opacidade e movimentos), que contribuem para tornar os sites mais dinâmicos e cativantes.
-                    <br>
-                    Minha experiência abrange a elaboração de Landing Pages eficientes e a aplicação de ferramentas de Back-End, tais como <span>Node.js</span> e <span>MongoDB,</span> para agregar valor a projetos quando necessário.
-                    <br>
-                    Com uma postura proativa e cuidado com os por menores, estou dedicado a fornecer soluções inovadoras e eficientes que gerem valor tanto para os clientes quanto para a equipe.</p>
+        </div>
 
-
-
-                    <!--  <div class="info">
-                        <div>
-                            <p><strong>Nome:</strong> Carlos Resende</p>
-                            <p><strong>Cel:</strong> +55 32 9 9828-3189</p>
-                            <p><strong>Experiencia:</strong> 1 Years</p>
-                            <p><strong>GitHub:</strong> https://github.com/carlosresendeP</p>
-                        </div>
-                        <div>
-                            <p><strong>Age:</strong> 23</p>
-                            <p><strong>Address:</strong> Juiz de Fora, MG, Brazil</p>
-                            <p><strong>Freelance:</strong> Disponivel</p>
-                        </div>
-                    </div>-->
-                    <!--  <a class="download-btn" href="assets/Curriculo Carlos.pdf">DOWNLOAD CV</a>-->
+        <div class="container">
+            <div class="hero-content">
+                <h1>Olá, eu sou <span>Carlos Resende</span></h1>
+                <h3>Desenvolvedor Web & Programador Front-end</h3>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Contate-me</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="services" id="services">
-            <h2><span>Meus serviços</span></h2>
-            <div class="content">
-                <article class="service reveal">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Desenvolvo websites sob medida, com design exclusivo e funcionalidade personalizada para atender às suas necessidades.</p>
-                </article>
-                <article class="service revealDelay300">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3> Landing Pages de Conversão</h3>
-                    <p>Transformo layouts e designs em interfaces interativas e funcionais, garantindo que seu site ou aplicação tenha uma experiência visual atraente e uma navegação fluida.</p>
-                </article>
-                <article class="service revealDelay500">
-                    <i class="fas fa-desktop"></i>
-                    <h3>Interface do usuário</h3>
-                    <p>Crio interfaces visuais modernas, intuitivas e atraentes, focadas em proporcionar a melhor experiência para seus usuários.</p>
-                </article>
+    <!-- Seção Sobre -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
             </div>
-        </section>
-
-
-
-
-        <!--  <section class="pricing-section" id="princing">
-            <h2 class="section-title">Planos de Desenvolvimento Web</h2>
-            <div class="pricing-cards">
-
-                
-                <div class="pricing-card test reveal">
-                    <h3 class="plan-title test">Peça um teste</h3>
-                    <p class="price test">R$ 0</p>
-                    <ul class="benefits">
-                        <li>1 Seção de graça</li>
-                        <li>Design Personalizado</li>
-                        <li>Entrega em até 2 dias</li>
-                    </ul>
-                    <button class="cta-button">Contratar</button>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="assets/photo-perfil.png" alt="Sua Foto">
                 </div>
-                
-                <div class="pricing-card revealDelay300">
-                    <h3 class="plan-title">Plano Básico</h3>
-                    <p class="price">R$ 497,00</p>
-                    <ul class="benefits">
-                        <li>1 Seção de graça</li>
-                        <li>Site Responsivo</li>
-                        <li>Design Personalizado</li>
-                        <li>1 Página</li>
-                        <li>Otimização Básica de SEO</li>
-                        <li>Integração com Redes Sociais</li>
-                        <li>Hospedagem de 1 ano - R$70,00</li>
-                        <li>Entrega em até 15 dias</li>
+                <div class="about-text">
+                    <h3>Desenvolvedor Front end</h3>
+                    <p>Sou um desenvolvedor web especializado em front-end, com expertise na criação de interfaces interativas, responsivas e de alto desempenho. Possuo domínio em HTML, CSS, JavaScript e frameworks modernos, como React.</p>  
+                    <p>Minha abordagem alia design centrado no usuário a um código estruturado, eficiente e otimizado para a melhor performance. Estou constantemente aprimorando minhas habilidades e explorando novas tecnologias para desenvolver soluções inovadoras e de qualidade.</p>
+                    <ul class="skills">
+                        <li class=" skill-tag ">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png" width="50"
+                                alt="logo-html">
+                            <p>HTML</p>
+                        </li>
+    
+                        <li class=" skill-tag ">
+                            <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" width="40" alt="logo-css">
+                            <p>CSS</p>
+                        </li>
+    
+                        <li class=" skill-tag ">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="50"
+                                alt="logo-javascript">
+                            <p >JavaScript</p>
+                        </li>
+    
+                        <li class=" skill-tag ">
+                            <img src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png"
+                                width="46" alt="logo-react">
+                            <p>React</p>
+                        </li>
+    
+                        <li class=" skill-tag ">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png"
+                                width="100" alt="logo-node">
+                            <p >Node.js</p>
+                        </li>
+    
+                        <li class=" skill-tag ">
+                            <img src="https://img.icons8.com/color/512/git.png" width="60" alt="logo-git">
+                            <p >Git</p>
+                        </li>
+                                                
+                        <li class=" skill-tag ">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="50" alt="logo-git">
+                            <p >Figma</p>
+                        </li>
+    
+                        <li class=" skill-tag ">
+                            <img src="https://v5.getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo-shadow.png" width="60" alt="logo-git">
+                            <p>Bootstrap</p>
+                        </li>
+    
+                        <li class=" skill-tag ">
+                            <img src="https://img.icons8.com/color/512/sass.png" width="80" alt="logo-git">
+                            <p >Sass</p>
+                        </li>
                     </ul>
-                    <button class="cta-button">Contratar</button>
-                </div>
-                
-                <div class="pricing-card premium revealDelay500">
-                    <h3 class="plan-title">Plano Avançado</h3>
-                    <p class="price">R$ 1097,00</p>
-                    <ul class="benefits">
-                        <li>1 Seção de graça</li>
-                        <li>Site Responsivo</li>
-                        <li>Design Exclusivo</li>
-                        <li>Até 3 Páginas</li>
-                        <li>Otimização Avançada de SEO</li>
-                        <li>Integração com Redes Sociais</li>
-                        <li>Fomulário</li>
-                        <li>Hospedagem de até 3 anos</li>
-                        <li>Entrega em até 30 dias</li>
-                    </ul>
-                    <button class="cta-button">Contratar</button>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-            -->
+    <!-- Seção Projetos -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus Projetos</h2>
+            </div>
+            <div class="projects-grid">
 
-
-
-
-
-
-
-
-        <section class="projects " id="projects">
-            <h2 class="section-title project-title">Conheça meus Projetos</h2>
-            <div class="content-projects">
-                <!-- Card 1 
+                <!-- Projeto 1 
                 <div class="project-card">
-                    <img src="project1.jpg" alt="Imagem do Projeto 1" class="project-image">
-                    <h3 class="project-title">Portfolio Pessoal</h3>
-                    <p class="technologies">Tecnologias: HTML, CSS, JavaScript</p>
-                    <div class="project-links">
-                        <a href="https://github.com/seuusuario/projeto1" target="_blank" class="source-code">Código
-                            Fonte</a>
-                        <a href="https://seusite.com/projeto1" target="_blank" class="access-button">Acessar Site</a>       
+                    <div class="project-img">
+                        <img src="" alt="Projeto 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" title="Ver Projeto"><span>👁️</span></a>
+                                <a href="#" title="Ver Código"><span>💻</span></a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div> Em progresso</div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce Responsivo</h3>
+                        <p>Um site completo de e-commerce com design responsivo, carrinho de compras funcional e sistema
+                            de pagamento.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">React</span>
+                        </div>
+                    </div>
                 </div>
+            </div>-->
 
+            <p class="show-more">Ver mais projetos em <a href="#" class="btn btn-primary">Ver mais</a></p>
+        </div>
+    </section>
 
-                Card 2 
-                <div class="project-card">
-                    <img src="project2.jpg" alt="Imagem do Projeto 2" class="project-image">
-                    <h3 class="project-title">Loja Virtual</h3>
-                    <p class="technologies">Tecnologias: HTML, CSS, React</p>
-                    <div class="project-links">
-                        <a href="https://github.com/seuusuario/projeto2" target="_blank" class="source-code">Código
-                            Fonte</a>
-                        <a href="https://seusite.com/projeto2" target="_blank" class="access-button">Acessar Site</a>
-                    </div>
-                </div>-->
-                <!-- Adicione mais cards conforme necessário -->
+    <!-- Seção Contato -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
             </div>
-        </section>
-    </main>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Vamos Conversar</h3>
+                    <p>Estou interessado em oportunidades freelance. Se você tem uma pergunta ou proposta, não hesite em entrar em contato.</p>
+                    <div class="contact-links">
+                        <a href="mailto:seu-email@exemplo.com" class="contact-link">
+                            <span>✉️</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>devcarlosresende@hotmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+5500000000000" class="contact-link">
+                            <span>📱</span>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (32)9 9828-3189</p>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <span>📍</span>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Minas Gerais, Brasil</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="FormWhatsApp(event)" >
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nome" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Mensagem" id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-
-        <div class="footer-container">
-            <div>
-                <div class="footer-content " id="footer">
-                    <h2>Contato</h2>
-                    <h3>
-                        Carlos Resende
-                    </h3>
-                    <p class="description">
-                        Desenvolvedor Front-End & Programador Web
-                        <br>
-                        Desevolvo websites sob medida, com design exclusivo e funcionalidade personalizada para atender às suas necessidades.
-                    </p>
-                    <p>Email: <strong>dev.carlosresende@hotmail.com</strong></p>
-                    <p>Tel: +55 32 9 9828-3189</p>
-                    <p>Siga-me<a href="https://www.linkedin.com/in/carlos-paula2001/" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a> and <a href="https://github.com/carlosresendeP" target="_blank"
-                    rel="noopener noreferrer"> <i class="fa-brands fa-github"></i> GitHub</a></p>
-                </div>
-                <div class="footer-form">
-                    <form onsubmit="FormWhatsApp(event)">
-                        <h2>Envie-me uma mensagem</h2>
-                        <input type="text" placeholder="Nome" required id="name">
-                        <input type="email" placeholder="Email" required id="email">
-                        <textarea placeholder="Mensagem" required id="message"></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/carlos-paula2001/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <!--  <a href="https://x.com" class="social-link"><i class="fab fa-x-twitter"></i></a>-->
+                <a href="https://www.instagram.com/dev.carlosresende/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="https://www.youtube.com" class="social-link"><i class="fab fa-youtube"></i></a> -->
             </div>
+            <p>&copy; <span class="date"></span> Carlos Resende. Todos os direitos reservados.</p>
         </div>
-
-        <p class="credit-text"> &copy; <span class="date"></span> Todos os Direitos reservados - Site desenvolvido por Carlos Resende</p>
     </footer>
+
+    <script src="js/projects.js"></script>
+    <script src="js/scripts-index2.js"></script>
+    <script src="js/cardprojects.js"></script>
+    <script src="js/FormLogic.js"></script>
 </body>
 
-
 </html>
-<script src="./js/cardprojects.js"></script>
-<script src="./js/projects.js"></script>
-<script src="./js/script.js"></script>
-<script src="./js/reveal.js"></script>
-<script src="js/FormLogic.js"></script>

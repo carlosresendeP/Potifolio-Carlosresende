@@ -81,7 +81,7 @@ const myprojects = [
         Progress: false,
     },
     {
-        img: "./assets/capas/capa CodeStrategy.png",
+        img: "./assets/capas/capa-CodeStrategy.png",
         description: "projeto de um site de estratégia de código",
         titulo: "Code Strategy",
         tech: "HTML, CSS, JAVASCRIPT",
