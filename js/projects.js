@@ -185,6 +185,16 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/project-Nexcent",
         linkSite: "https://project-nexcent-theta.vercel.app/",
         Progress: false,
+    },
+
+    {
+        img: "./assets/capas/Thumb-RubiaWebsite.png",
+        description: "Projeto real de um site para uma profissional de saúde",
+        titulo: "Website - Rubia",
+        tech: "HTML, CSS, JAVASCRIPT",
+        linkFont:"https://github.com/carlosresendeP/Projeto-landing-page-neuropsicologa",
+        linkSite: "https://projeto-rubialand-website.vercel.app/",
+        Progress: false,
     }
 
 ];

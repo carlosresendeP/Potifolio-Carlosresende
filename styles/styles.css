@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-color: #45e997;
-    --primary-color-opacity: #e9456048;;
+    --primary-color: #33ca7f;
+    --primary-color-opacity: #45e99738;
     --colorfundo: #1b1b2f;
     --dark-grey: #201b2f;
     --medium-grey: #5a5959;
@@ -168,6 +168,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
+    /*background: url('../assets/videos/loop-background.mp4');*/
     background: url('../assets/fundo-hero.jpg');
     z-index: 1;
     background-size: cover;
@@ -177,7 +178,7 @@ nav {
 
 .hero-content {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     position: absolute;
     top: 40%;
     left: 10%;
@@ -236,7 +237,7 @@ nav {
 .btn-secondary:hover {
     background-color: var(--primary-color);
     border-color: var(--dark-grey);
-    color: var(--dark-grey);
+    color: var(--light-grey);
     transform: translateY(-3px);
 }
 
@@ -347,7 +348,24 @@ nav {
 }
 
 
+/*imagem
+.decoration{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
 
+.decoration-img{
+    background: url('../assets/fundo-hero.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+*/
 
 
 
@@ -377,6 +395,7 @@ nav {
 
 .project-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0px 0px 25px #33ca7e52;
 }
 
 .project-img {

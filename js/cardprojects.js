@@ -21,8 +21,8 @@ function showProjects(projects){
                         <img src=${project.img} alt="Projeto 1">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href=${project.linkSite} title="Ver Projeto"><span>👁️</span></a>
-                                <a href=${project.linkSite} title="Ver Código"><span>💻</span>  </a>
+                                <a href=${project.linkSite} title="Ver Projeto" target="_blank" ><span>👁️</span></a>
+                                <a href=${project.linkSite} title="Ver Código" target="_blank" ><span>💻</span>  </a>
                             </div>
                         </div>
                     </div>
