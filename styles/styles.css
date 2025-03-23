@@ -169,12 +169,25 @@ nav {
     width: 100%;
     height: 100%;
     /*background: url('../assets/videos/loop-background.mp4');*/
-    background: url('../assets/fundo-hero.jpg');
+    /* background: url('../assets/fundo-hero.jpg'); */
     z-index: 1;
     background-size: cover;
     background-position: center;
     mix-blend-mode: multiply;
+
 }
+.hero-bg video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0);
+    transition: filter 1s linear;
+}
+.hero-bg:hover video{
+    filter: saturate(1);
+    
+}
+
 
 .hero-content {
     width: 100%;
@@ -372,6 +385,17 @@ nav {
 /* Seção Projetos */
 .projects {
     background-color: var(--dark-grey);
+    position: relative;
+}
+
+.projects .hero-bg{
+    z-index: -1;
+    mix-blend-mode: hard-light;
+    
+}
+.projects .hero-bg video{
+    filter: saturate(0);
+    opacity: 0.2;
 }
 
 .projects .section-header{
@@ -383,6 +407,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 30px;
+    z-index: 10;
 }
 
 .project-card {
