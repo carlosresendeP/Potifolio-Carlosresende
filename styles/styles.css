@@ -169,11 +169,12 @@ nav {
     width: 100%;
     height: 100%;
     /*background: url('../assets/videos/loop-background.mp4');*/
-    /* background: url('../assets/fundo-hero.jpg'); */
+    background: url('../assets/fundo-hero.jpg'); 
     z-index: 1;
     background-size: cover;
     background-position: center;
     mix-blend-mode: multiply;
+    filter: saturate(0)
 
 }
 .hero-bg video{
@@ -196,6 +197,11 @@ nav {
     top: 40%;
     left: 10%;
     z-index: 10;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .hero h1 {
@@ -203,6 +209,9 @@ nav {
     margin-bottom: 20px;
     line-height: 1.2;
     color: var(--light-grey);
+}
+.hero h1 span{
+    color: var(--primary-color);
 }
 
 
@@ -217,46 +226,144 @@ nav {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     gap: 15px;
+
 }
 
 .btn {
-    padding: 12px 30px;
+    padding: 20px 40px;
     border-radius: 5px;
     font-weight: 500;
-    cursor: pointer;
     transition: all 0.3s ease;
-}
+    font-size: 20px;
 
-.btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
     border: none;
 }
 
-.btn-primary:hover {
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
+/*config btn primary*/
+.btn-primary {
+    background: linear-gradient(to right, var(--primary-color), #089651); 
+    color: var(--white);
+}
+.btn-primary::after{
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #ffd401;
+    background: linear-gradient(to right, #8e2de2, #4a00e0); 
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+    transform: scale(0);
+}
+.btn-primary:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+    transform: scale(1);
+}
+.btn-primary:hover{
     transform: translateY(-3px);
 }
+.btn-primary span{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+}
 
+.btn-primary:hover span {
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+/*config btn secundary*/
 .btn-secondary {
     background-color: transparent;
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+
+    position: relative;
+    cursor: pointer;
+
+    background: linear-gradient(to right, #8e2de2, #4a00e0); 
+    overflow: hidden;
 }
 
-.btn-secondary:hover {
-    background-color: var(--primary-color);
-    border-color: var(--dark-grey);
-    color: var(--light-grey);
+/*.btn-secondary::after{
+    content: " ";
+    width: 100%;
+    height:0%;
+    background: #ffd401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    left: 0;
+    transform: translate(-50%);
+    transform: scale(1);
+    border-radius: 50%;
+}
+.btn-secondary:hover::after {
+
+    height: 100%;
+}*/
+.btn-secondary:hover{
     transform: translateY(-3px);
 }
-
-.hero h1 span{
-    color: var(--primary-color);
+.btn-secondary span{
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
 }
+
+.btn-secondary::before,
+.btn-secondary::after {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.btn-secondary::before {
+    content: "";
+    background: linear-gradient(to left, var(--primary-color), #089651);
+    width: 120%;
+    left: -10%;
+    transform: skew(-30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-secondary:hover::before {
+    transform: translate3d(100%, 0, 0);
+    }
+
+.btn-secondary:active {
+    transform: scale(0.95);
+}
+
+/*.btn-secondary:hover span {
+    color: var(--dark-grey);
+    animation: scaleUp 0.3s ease-in-out;
+}*/
+
+
+
+
 
 
 
@@ -380,6 +487,87 @@ nav {
 
 */
 
+/* Seção Serviços */
+/*SERVIÇOS*/
+
+
+.services {
+    padding: 50px 100px;
+    background-color:var(--dark-grey);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: var(--light-grey);
+}
+
+.services .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permite que os cartões se movam para a próxima linha em telas menores */
+    align-items: center;
+}
+
+.services .service {
+    background-color: var(--light-grey);
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    height: 300px;
+    /* Ajusta a largura para 3 cartões em uma linha com espaço */
+    margin: 10px;
+    /* Espaço entre os cartões */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Efeito suave ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra suave */
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services .service:hover {
+    transform: translateY(-10px);
+    /* Levanta o cartão ao passar o mouse */
+    box-shadow: 0 0px 20px rgba(0, 155, 90, 0.459);
+    /* Aumenta a sombra ao passar o mouse */
+}
+
+.services .service i {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--colorpadrao);
+}
+
+.services .service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* Cor do texto do título */
+}
+
+.services .service p {
+    font-size: 13px;
+    color: var(--dark-grey);
+    /* Cor do texto da descrição */
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+
+
+
+
 
 
 /* Seção Projetos */
@@ -429,6 +617,7 @@ nav {
     background-color: var(--medium-grey);
     position: relative;
     overflow: hidden;
+    object-fit: cover;
 }
 
 

@@ -195,6 +195,15 @@ const myprojects = [
         linkFont:"https://github.com/carlosresendeP/Projeto-landing-page-neuropsicologa",
         linkSite: "https://projeto-rubialand-website.vercel.app/",
         Progress: false,
-    }
+    },
+    {
+        img: "./assets/capas/Thumb-chatDev.png",
+        description: "Projeto funcional de um chat com web socket Modo de usar: Abre varias abas com o mesmo link e comece a conversar",
+        titulo: "Chat",
+        tech: "HTML, CSS, JAVASCRIPT, NODE JS, WEB SOCKET",
+        linkFont:"https://github.com/carlosresendeP/DevChat",
+        linkSite: "https://chat-frontend-z4cu.onrender.com/",
+        Progress: false,
+    },
 
 ];
