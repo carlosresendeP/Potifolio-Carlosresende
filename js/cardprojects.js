@@ -18,7 +18,7 @@ function showProjects(projects){
         listProject +=`
                 <div class="project-card">
                     <div class="project-img">
-                        <img src=${project.img} alt="Projeto 1">
+                        <img src=${project.img} alt="Projeto ${project.titulo}">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href=${project.linkSite} title="Ver Projeto" target="_blank" ><span>👁️</span></a>

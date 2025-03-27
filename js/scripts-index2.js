@@ -86,3 +86,19 @@ document.addEventListener('DOMContentLoaded', function () {
     typeWriter();
     */
 });
+
+
+//texto com o nome da tecnologia nas skill-tag 
+
+const skillTags = document.querySelectorAll('.skill-tag');
+skillTags.forEach((tag, index) => {
+    tag.addEventListener('mouseover', () => {
+        tag.classList.add('active');
+
+    })
+
+    tag.addEventListener('mouseout', () => {
+        tag.classList.remove('active');
+    })
+
+});

@@ -1,5 +1,6 @@
 const myprojects = [
     {
+        id: 1,
         img: "./assets/capas/capa-relogio.png",
         description: "projeto de um relógio digital",
         titulo: "Relógio Digital",
@@ -9,6 +10,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 2,
         img: "./assets/capas/capa-devclub-coffe.png",
         description: "projeto de um site de café fictício",
         titulo: "DevClub Coffe",
@@ -18,6 +20,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 3,
         img: "./assets/capas/capa-conversor-de-moedas.png",
         description: "projeto de um conversor de moedas",
         titulo: "Conversor de Moedas",
@@ -26,15 +29,8 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Conversor-de-Moedas/",
         Progress: false,
     },
-    /*{
-        img: "./assets/capas/capa-site-Devcar.png",
-        titulo: "Dev Car",
-        tech: "HTML, CSS",
-        linkFont: "https://github.com/carlosresendeP/projeto-loja-de-carro",
-        linkSite: "https://carlosresendep.github.io/projeto-loja-de-carro/",
-        Progress: true,
-    },*/
     {
+        id: 4,
         img: "./assets/capas/Capa-site-previsão.png",
         description: "Projeto de site previsão do tempo",
         titulo: "Previsão do Tempo",
@@ -44,6 +40,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 5,
         img: "./assets/capas/capa-calculadora.png",
         description: "projeto de uma calculadora",
         titulo: "Calculadora",
@@ -53,6 +50,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 6,
         img: "./assets/capas/capa-slider.png",
         description: "projeto de um slider",
         titulo: "Dev Slider",
@@ -62,6 +60,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 7,
         img: "./assets/capas/capa-tesla.png",
         description: "projeto de um site da tesla",
         titulo: "Dev Club Tesla",
@@ -70,8 +69,8 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Devclub-tesla/",
         Progress: false,
     },
-
     {
+        id: 8,
         img: "./assets/capas/capa-projeto-justly.png",
         description: "projeto de um site de advogados copia do justly",
         titulo: "Projeto Justly Advogados",
@@ -81,6 +80,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 9,
         img: "./assets/capas/capa-CodeStrategy.png",
         description: "projeto de um site de estratégia de código",
         titulo: "Code Strategy",
@@ -90,6 +90,7 @@ const myprojects = [
         Progress: true,
     },
     {
+        id: 10,
         img: "./assets/capas/capa-dev-burguer.png",
         description: "projeto de um site siples de hamburgueria fictícia com o navbar animado",
         titulo: "Burger Store",
@@ -99,6 +100,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 11,
         img: "./assets/capas/capa-traduto-codepoint.png",
         description: "projeto de um tradutor de linguas totalmente funcional",
         titulo: "Tradutor",
@@ -108,6 +110,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 12,
         img: "./assets/capas/Capa-cad-usuarios.png",
         description: "projeto de um cadastro de usuários com o objetivo de treinar o uso de API",
         titulo: "Cadastros de Usuários",
@@ -116,8 +119,8 @@ const myprojects = [
         linkSite: "https://cadastros-de-usuarios.vercel.app/",
         Progress: false,
     },
-
     {
+        id: 13,
         img: "./assets/capas/capa-golden.png",
         description: "projeto de um site de vendas aleatório",
         titulo: "Página de Vendas ",
@@ -126,8 +129,8 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/pagina-de-vendas/",
         Progress: true,
     },
-
     {
+        id: 14,
         img: "./assets/capas/capa-architectural.png",
         description: "projeto de um site para arquitetura",
         titulo: "Site para Arquitetura",
@@ -136,8 +139,8 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Architectural-Designer/",
         Progress: true,
     },
-
     {
+        id: 15,
         img: "./assets/capas/capa-astreus-academia.png",
         description: "projeto de um site para academia",
         titulo: "Dev Academia",
@@ -146,8 +149,8 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Astraeus-Academia/",
         Progress: false,
     },
-
     {
+        id: 16,
         img: "./assets/capas/capa-decora-e-conforto.png",
         description: "projeto de um site de moveis e decoração",
         titulo: "Decora & Conforto",
@@ -156,8 +159,8 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Decora-Conforto-Moveis-Decoracao/",
         Progress: false,
     },
-
     {
+        id: 17,
         img: "./assets/capas/capa-dentista-landing-page.png",
         description: "projeto de uma landing page para dentista",
         titulo: "Landing page para Dentista",
@@ -166,8 +169,8 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Site-para-dentista/",
         Progress: true,
     },
-
     {
+        id: 18,
         img: "./assets/capas/thumb-barberdev.png",
         description: "projeto de um site para barbearia",
         titulo: "BarberDev",
@@ -176,8 +179,8 @@ const myprojects = [
         linkSite: "https://barberdev-ten.vercel.app/",
         Progress: false,
     },
-
     {
+        id: 19,
         img: "./assets/capas/capa-project-nexcent.png",
         description: "projeto de um site para uma empresa fictícia, com o objetivo de treinar o react",
         titulo: "Projeto Nexcent",
@@ -186,8 +189,8 @@ const myprojects = [
         linkSite: "https://project-nexcent-theta.vercel.app/",
         Progress: false,
     },
-
     {
+        id: 20,
         img: "./assets/capas/Thumb-RubiaWebsite.png",
         description: "Projeto real de um site para uma profissional de saúde",
         titulo: "Website - Rubia",
@@ -197,6 +200,7 @@ const myprojects = [
         Progress: false,
     },
     {
+        id: 21,
         img: "./assets/capas/Thumb-chatDev.png",
         description: "Projeto funcional de um chat com web socket Modo de usar: Abre varias abas com o mesmo link e comece a conversar",
         titulo: "Chat",
@@ -204,6 +208,5 @@ const myprojects = [
         linkFont:"https://github.com/carlosresendeP/DevChat",
         linkSite: "https://chat-frontend-z4cu.onrender.com/",
         Progress: false,
-    },
-
+    }
 ];
