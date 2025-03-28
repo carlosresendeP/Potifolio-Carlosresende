@@ -668,7 +668,7 @@ nav {
     transform: scale(1.1);
 }
 
-/* .project-overlay {
+.project-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -680,7 +680,7 @@ nav {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-} */
+} 
 
 .project-card:hover .project-overlay {
     opacity: 1;
@@ -718,6 +718,7 @@ nav {
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
+    z-index:10
 }
 
 .project-title {
