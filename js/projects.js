@@ -39,7 +39,7 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/app-previsao-do-tempo/",
         Progress: false,
     },
-    {
+    /*{
         id: 5,
         img: "./assets/capas/capa-calculadora.png",
         description: "projeto de uma calculadora",
@@ -48,7 +48,7 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Calculadora",
         linkSite: "https://carlosresendep.github.io/Calculadora/",
         Progress: false,
-    },
+    },*/
     {
         id: 6,
         img: "./assets/capas/capa-slider.png",
@@ -129,7 +129,7 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/pagina-de-vendas/",
         Progress: true,
     },
-    {
+    /*{
         id: 14,
         img: "./assets/capas/capa-architectural.png",
         description: "projeto de um site para arquitetura",
@@ -138,7 +138,7 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Architectural-Designer",
         linkSite: "https://carlosresendep.github.io/Architectural-Designer/",
         Progress: true,
-    },
+    },*/
     {
         id: 15,
         img: "./assets/capas/capa-astreus-academia.png",
