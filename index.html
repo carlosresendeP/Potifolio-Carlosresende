@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Portfólio | Carlos Resende</title>
 
     <!-- font awasome -->
@@ -24,7 +24,14 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- scrollreveal -->
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="stylesheet" href="styles/stylesparticles.css">
 </head>
 
 <body>
@@ -49,8 +56,12 @@
     <section class="hero" id="home">
 
         <div class="hero-bg">
-            <!-- <video src="assets/videos/loop-background-03.mp4" autoplay loop ></video> -->
+
         </div>
+        <!-- particles.js container -->
+        <div id="particles-js"></div> <!-- stats - count particles -->
+
+
 
         
 
@@ -58,7 +69,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h3 class="name-hero">Carlos Resende</h3>
-                    <h1>Desenvolvedor <span>Front</span>end</h1>
+                    <h1>Desenvolvedor <span>Frontend</span></h1>
                     <h3>Desenvolvedor Web & Programador Front-end</h3>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary"><span>Ver Projetos</span></a>
@@ -294,6 +305,8 @@
     <script src="js/scripts-index2.js"></script>
     <script src="js/cardprojects.js"></script>
     <script src="js/FormLogic.js"></script>
+    <script src="js/Particles.js"></script>
+
 </body>
 
 </html>
