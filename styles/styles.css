@@ -130,6 +130,7 @@ nav {
     font-weight: 500;
     position: relative;
     color: var(--light-grey);
+    font-size: 16px;
 }
 
 .nav-links a::after {
