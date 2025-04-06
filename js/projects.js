@@ -208,5 +208,16 @@ const myprojects = [
         linkFont:"https://github.com/carlosresendeP/DevChat",
         linkSite: "https://chat-frontend-z4cu.onrender.com/",
         Progress: false,
-    }
+    },
+
+    {
+        id: 22,
+        img: "./assets/capas/Thumb-archVision.png",
+        description: "Projeto de um site de Architetura e Design",
+        titulo: "Arch Vision",
+        tech: "HTML, CSS, JAVASCRIPT",
+        linkFont:"https://github.com/carlosresendeP/Dev-ArchVision",
+        linkSite: "https://carlosresendep.github.io/Dev-ArchVision/",
+        Progress: false,
+    },
 ];
