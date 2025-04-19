@@ -446,6 +446,7 @@ nav {
 .about-text h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .about-text p {
@@ -541,6 +542,7 @@ nav {
 /*seção de tecnologias*/
 .technologies {
     width: 100%;
+    height: 100%;
     padding: 50px 100px;
     background: linear-gradient(to bottom, var(--dark-grey), var(--colorfundo), var(--dark-grey));
     display: flex;
@@ -567,6 +569,7 @@ nav {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+
 
 }
 
@@ -1107,10 +1110,18 @@ footer {
     }
 
     .technologies{
-        padding: 10px 5px;
+        padding: 10px 0px;
+
     }
     .technologies p{
         text-align: center;
+    }
+    .technologies .container{
+        width: 100%;
+        
+    }
+    .cards {
+        width: 100%;
     }
 }
 
@@ -1170,5 +1181,9 @@ footer {
 
     .services {
         padding: 20px 0;
+    }
+
+    .technologies{
+        padding: 10px 5px;
     }
 }
