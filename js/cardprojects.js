@@ -22,7 +22,7 @@ function showProjects(projects){
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href=${project.linkSite} title="Ver Projeto" target="_blank" ><span>👁️</span></a>
-                                <a href=${project.linkSite} title="Ver Código" target="_blank" ><span>💻</span>  </a>
+                                <a href=${project.linkFont} title="Ver Código" target="_blank" ><span>💻</span>  </a>
                             </div>
                         </div>
                     </div>
