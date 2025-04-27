@@ -863,7 +863,6 @@ nav {
     font-size: 15px;
     color: var(--dark-grey);
     margin-bottom: 18px;
-    text-transform: capitalize;
     font-weight: 400;
     letter-spacing: 0.5px;
     text-align: left;
