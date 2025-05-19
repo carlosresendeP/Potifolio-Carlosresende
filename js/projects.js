@@ -229,5 +229,18 @@ const myprojects = [
         linkFont:"https://github.com/carlosresendeP/Pizzaria-Italiaba-landingPage",
         linkSite: "https://carlosresendep.github.io/Pizzaria-Italiaba-landingPage/",
         Progress: false,
+        specificPage: false,
     },
+
+    {
+        id: 24,
+        img: "./assets/capas/Thumb-DevBurger.png",
+        description: "Projeto completo de uma hamburgueria com sistema de pedidos e pagamentos, cadastro de produtos",
+        titulo: "Dev Burger",
+        tech: "React, Styled Components, Javascript, Node JS, Mongo DB, API, Docker,Prisma, PostgresSQL",
+        //linkFont:"https://github.com/carlosresendeP/Pizzaria-Italiaba-landingPage",
+        linkSite: "./pages/Devbuger-Project/index.html",
+        Progress: false,
+        specificPage: true,
+    }
 ];

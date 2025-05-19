@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Devburger - Guia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./assets/Logo.svg" alt="logo" class="logo">
+            <h1>DevBurger</h1>
+            <p>|</p>
+            <a href="../../index.html">Home</a>
+        </nav>
+
+    </header>
+
+    <div class="hero-image">
+        <h3>Guia</h3>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>DevBurger</h1>
+            <p>O DevBurger é um projeto de um sistema de pedidos de lanches, desenvolvido como parte do curso de
+                Desenvolvimento Web Full Stack do DevClub. O objetivo principal deste projeto é criar uma aplicação web
+                que permita aos usuários fazerem pedidos de lanches de forma fácil e rápida, além de proporcionar um
+                painel administrativo para gerenciamento de pedidos, estoque e relatórios.</p>
+
+            <h2>Visão Geral do Projeto</h2>
+            <p>O DevBurger consiste em duas aplicações principais:</p>
+            <p><strong>1. Frontend para Clientes:</strong> Uma interface amigável onde os clientes podem visualizar o
+                cardápio, selecionar produtos, personalizar seus pedidos e realizar o pagamento.</p>
+            <p><strong>2. Painel Administrativo:</strong> Uma interface para gerentes e funcionários acompanharem
+                pedidos em tempo real, gerenciarem o cardápio, controlarem o estoque e acessarem relatórios de vendas.
+            </p>
+
+            <h2>Stack Tecnológica</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>Frontend</h3>
+                    <p>React.js para construção da interface do usuário, com React Router para navegação e Styled
+                        Components para estilização. Implementamos também Redux para gerenciamento de estado global da
+                        aplicação.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Backend</h3>
+                    <p>Node.js com Express para a criação da API RESTful, Sequelize como ORM para interação com o banco
+                        de dados, e autenticação JWT para segurança.</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Banco de Dados</h3>
+                    <p>PostgreSQL para armazenamento de dados relacionais como usuários, produtos, pedidos e transações.
+                        Utilizamos MongoDB para logs e dados não estruturados.</p>
+                </div>
+            </div>
+
+            <h2>Funcionalidades Principais</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <div class="feature-icon">🍔</div>
+                    <h3>Cardápio Digital</h3>
+                    <p>Exibição detalhada dos produtos com imagens, descrições e opções de personalização.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛒</div>
+                    <h3>Carrinho de Compras</h3>
+                    <p>Adição, remoção e edição de itens com cálculo automático do total.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👤</div>
+                    <h3>Cadastro e Login</h3>
+                    <p>Sistema de autenticação com opções de login social ou email/senha.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💳</div>
+                    <h3>Pagamento Online</h3>
+                    <p>Integração com gateways de pagamento para cartões e PIX.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsivo</h3>
+                    <p>Design adaptável para todos os dispositivos, desde celulares até desktops.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <h3>Painel Admin</h3>
+                    <p>Controle de pedidos, produtos e relatórios gerenciais.</p>
+                </div>
+            </div>
+
+            <!-- <h2>Passo a Passo para Implementação</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3><span class="step-number">1</span> Configuração do Ambiente</h3>
+                    <p>Para iniciar o projeto, você precisará configurar seu ambiente de desenvolvimento com Node.js,
+                        npm ou yarn, e Git. Recomendamos também instalar o VS Code como editor de código.</p>
+                    <div class="code-sample">
+                        <pre><code>
+# Clonar o repositório
+git clone https://github.com/seu-usuario/devburger.git
+
+# Navegar até a pasta do projeto
+cd devburger
+
+# Instalar dependências
+npm install
+# ou
+yarn install
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h3><span class="step-number">2</span> Estrutura do Projeto Frontend</h3>
+                    <p>Organize seu projeto frontend seguindo uma estrutura de componentes reutilizáveis e páginas:</p>
+                    <div class="code-sample">
+                        <pre><code>
+devburger-frontend/
+├── public/
+│   ├── index.html
+│   └── assets/
+├── src/
+│   ├── components/
+│   │   ├── Header/
+│   │   ├── ProductCard/
+│   │   ├── Cart/
+│   │   └── ...
+│   ├── containers/
+│   │   ├── Home/
+│   │   ├── Products/
+│   │   ├── Checkout/
+│   │   └── ...
+│   ├── services/
+│   │   ├── api.js
+│   │   └── ...
+│   ├── store/
+│   │   ├── modules/
+│   │   └── index.js
+│   ├── styles/
+│   │   ├── global.js
+│   │   └── theme.js
+│   ├── App.js
+│   └── index.js
+└── package.json
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h3><span class="step-number">3</span> Implementação do Backend</h3>
+                    <p>Crie uma API RESTful com Node.js e Express, organizando as rotas e controladores:</p>
+                    <div class="code-sample">
+                        <pre><code>
+devburger-backend/
+├── src/
+│   ├── app/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   └── middlewares/
+│   ├── config/
+│   │   ├── database.js
+│   │   └── ...
+│   ├── database/
+│   │   ├── migrations/
+│   │   └── seeds/
+│   ├── routes/
+│   │   ├── products.routes.js
+│   │   ├── orders.routes.js
+│   │   └── ...
+│   ├── app.js
+│   └── server.js
+└── package.json
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h3><span class="step-number">4</span> Modelagem do Banco de Dados</h3>
+                    <p>Defina os modelos e relacionamentos do seu banco de dados:</p>
+                    <div class="code-sample">
+                        <pre><code>
+                        // models/User.js
+                        module.exports = (sequelize, DataTypes) => {
+                        const User = sequelize.define('User', {
+                            name: DataTypes.STRING,
+                            email: DataTypes.STRING,
+                            password_hash: DataTypes.STRING,
+                            admin: DataTypes.BOOLEAN,
+                        });
+
+                        User.associate = (models) => {
+                            User.hasMany(models.Order);
+                        };
+
+                        return User;
+                        };
+
+                        // models/Product.js
+                        module.exports = (sequelize, DataTypes) => {
+                        const Product = sequelize.define('Product', {
+                            name: DataTypes.STRING,
+                            price: DataTypes.FLOAT,
+                            category_id: DataTypes.INTEGER,
+                            path: DataTypes.STRING,
+                            offer: DataTypes.BOOLEAN,
+                        });
+
+                        Product.associate = (models) => {
+                            Product.belongsTo(models.Category, {
+                            foreignKey: 'category_id',
+                            });
+                        };
+
+                        return Product;
+                        };
+                        </code></pre>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <h3><span class="step-number">5</span> Implementação de Autenticação</h3>
+                    <p>Configure a autenticação com JWT para proteger rotas e identificar usuários:</p>
+                    <div class="code-sample">
+                        <pre><code>
+                        // controllers/SessionController.js
+                        const jwt = require('jsonwebtoken');
+                        const { User } = require('../models');
+
+                        class SessionController {
+                        async store(req, res) {
+                            const { email, password } = req.body;
+
+                            const user = await User.findOne({ where: { email } });
+
+                            if (!user) {
+                            return res.status(400).json({ error: 'Usuário não encontrado' });
+                            }
+
+                            if (!(await user.checkPassword(password))) {
+                            return res.status(401).json({ error: 'Senha incorreta' });
+                            }
+
+                            return res.json({
+                            id: user.id,
+                            email: user.email,
+                            name: user.name,
+                            admin: user.admin,
+                            token: jwt.sign(
+                                { id: user.id, admin: user.admin },
+                                process.env.JWT_SECRET,
+                                {
+                                expiresIn: '7d',
+                                }
+                            ),
+                            });
+                        }
+                        }
+
+                        module.exports = new SessionController();
+                        </code></pre>
+                    </div>
+                </div>
+            </div> -->
+
+            <h2>Screenshots da Aplicação</h2>
+            <div class="screenshots">
+                <div class="screenshot">
+                    <img src="assets/print-home.png" alt="Tela inicial do DevBurger" />
+                </div>
+                <div class="screenshot">
+                    <img src="assets/print-catalogo.png" alt="Página de produtos do DevBurger" />
+                </div>
+                <div class="screenshot">
+                    <img src="assets/print-carrinho.png" alt="Carrinho de compras do DevBurger" />
+                </div>
+                <div class="screenshot">
+                    <img src="assets/print-login.png" alt="tela de login" />
+                </div>
+                <div class="screenshot">
+                    <img src="assets/print-tela-admin.png" alt="tela de admin" />
+                </div>
+            </div>
+
+            <!-- <div class="video-project">
+                <h2>Vídeo do Projeto</h2>
+                <p>Assista ao vídeo abaixo para ver o DevBurger em ação:</p>
+                <video src="assets/video-devburger.mp4" width="80%" controls></video>
+
+            </div> -->
+
+            <div class="cta">
+                <h3>Pronto para implementar seu próprio DevBurger?</h3>
+                <p>Este guia fornece as bases para você começar a desenvolver seu próprio sistema de pedidos para
+                    hamburgueria. Lembre-se de adaptar as funcionalidades de acordo com as necessidades específicas do
+                    seu negócio.</p>
+
+                <p>Acesse o github e baixe o projeto </p>    
+                <div class="buttons-links">
+                    <a href="https://github.com/carlosresendeP/Backend-DevBurger-Projetct" class="btn" target="_blank">Backend</a>
+                    <a href="https://github.com/carlosresendeP/DevBurger-Interface" class="btn" target="_blank">Frontend</a>
+                </div>
+            </div>
+
+            <h2>Considerações Finais</h2>
+            <p>O projeto DevBurger é uma excelente oportunidade para praticar o desenvolvimento full stack, trabalhando
+                com tecnologias modernas e implementando funcionalidades reais que podem ser aplicadas em negócios do
+                mundo real. Ao seguir este guia, você terá um sistema completo de pedidos online que pode ser
+                personalizado e expandido conforme necessário.</p>
+            <p>Não se esqueça de implementar testes unitários e de integração para garantir a qualidade do seu código, e
+                de documentar adequadamente a API para facilitar o desenvolvimento e manutenção futura.</p>
+            <p>Boa sorte com o seu projeto DevBurger!</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- <div class="footer-content">
+            <div class="footer-column">
+                <img src="./assets/Logo.svg" alt="logo" class="logo">
+                <h1>DevBurger</h1>
+                <p>Sistema completo de pedidos online para hamburgueria desenvolvido com React, Node.js e PostgreSQL.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Documentação</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Contribuir</a></li>
+                    <li><a href="#">Reportar Bug</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Tecnologias</h3>
+                <ul>
+                    <li><a href="https://reactjs.org/" target="_blank">React.js</a></li>
+                    <li><a href="https://nodejs.org/" target="_blank">Node.js</a></li>
+                    <li><a href="https://expressjs.com/" target="_blank">Express</a></li>
+                    <li><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="mailto:contato@devburger.com">Carlosresende.com</a></li>
+                    <li><a href="https://instagram.com/devburger" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/devburger" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com/company/devburger" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="copyright">
+            &copy; 2025 DevBurger. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+</html>

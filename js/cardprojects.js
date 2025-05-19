@@ -12,10 +12,34 @@ function showProjects(projects){
 
     projects.forEach((project) => {
 
+        //verficar se a pagina é especifica
+        if(project.specificPage === true )
+            
+            {
+                listProject +=`
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src=${project.img} alt="Projeto ${project.titulo}">
+                        <div class="project-overlay specific">
+                            <div class="project-links specific">
+                                <a href=${project.linkSite} title="Ver Projeto" target="_blank" class='specific' ><span> Ver Projeto</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">${project.titulo} <span class='progress'> ${project.Progress ? 'Desenvolvimento' : 'Finalizado'} </span></h3>
+                        <p>${project.description}</p>
+                        <div class="project-tags">
+                            ${project.tech.split(',').map((tag) => `<span class="project-tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+        `
+        }
 
-    
-
-        listProject +=`
+        else
+            {
+                listProject +=`
                 <div class="project-card">
                     <div class="project-img">
                         <img src=${project.img} alt="Projeto ${project.titulo}">
@@ -35,6 +59,9 @@ function showProjects(projects){
                     </div>
                 </div>
         `
+        }
+        
+
 
 
     });

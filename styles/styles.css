@@ -792,6 +792,7 @@ nav {
     opacity: 1;
 }
 
+
 .project-links {
     display: flex;
     gap: 15px;
@@ -813,6 +814,12 @@ nav {
 .project-links a:hover {
     background-color: var(--dark-grey);
     color: var(--white);
+}
+
+.project-links .specific {
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
 }
 
 .project-info {
