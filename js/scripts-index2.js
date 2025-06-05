@@ -1,16 +1,20 @@
+//header
+const navbar = document.querySelector('.header');
+
+//fixar navbar quando rolar a página
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('header-fixed');
+    } else {
+        navbar.classList.remove('navbar-fixed');
+    }
+});
+
 //data
 const date = document.querySelector('.date')
 const newdate = new Date().getFullYear()
 date.innerHTML = newdate
 
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 50) {
-        header.classList.add('transparent');
-    } else {
-        header.classList.remove('transparent');
-    }
-});
 
 
 
