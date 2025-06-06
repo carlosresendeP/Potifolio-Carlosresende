@@ -1,14 +1,15 @@
 particlesJS("particles-js", {
     particles: {
         number: {
-            value: 160,
+            value: 80,
             density: {
                 enable: true,
                 value_area: 800,
             },
         },
         color: {
-            value: "#ffffff",
+            value: "#f5f5f5",
+            //cor das partículas
         },
         shape: {
             type: "circle",
@@ -21,22 +22,22 @@ particlesJS("particles-js", {
             },
             image: {
                 src: "img/github.svg",
-                width: 100,
-                height: 100,
+                width: 50,
+                height:50,
             },
         },
         opacity: {
-            value: 1,
+            value: 0.4,
             random: true,
             anim: {
                 enable: true,
-                speed: 1,
+                speed: 0.1,
                 opacity_min: 0,
                 sync: false,
             },
         },
         size: {
-            value: 3,
+            value: 5,
             random: true,
             anim: {
                 enable: false,
@@ -53,13 +54,15 @@ particlesJS("particles-js", {
             width: 1,
         },
         move: {
-            enable: true,
-            speed: 1,
-            direction: "none",
+            enable: true, //
+            speed: 0.5,
+            direction: "bottom", //direção do movimento das partículas
+
             random: true,
-            straight: false,
-            out_mode: "bounce",
-            bounce: false,
+            straight: false, //false = partículas se movem em direções aleatórias
+            out_mode: "none", //modo de saída das partículas
+            bounce: false, //criar efeito de rebote
+
             attract: {
                 enable: false,
                 rotateX: 600,
