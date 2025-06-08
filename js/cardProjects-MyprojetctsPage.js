@@ -13,25 +13,47 @@ function showProjects(projects) {
 
     projects.forEach((project) => {
 
-        {
-        listProject += `
-            <div class="project-card" id="${project.id}">
-                <img src="../../${project.img}" alt="${project.titulo}" class="project-image">
-                <div class="project-info">
-                    <h3>${project.titulo}</h3>
-                    <p>${project.description}</p>
-                    <div class="project-tags">
-                        ${project.tech.split(',').map((tag) => `<span class="tag">${tag}</span>`).join('')}
-                    </div>    
+        
 
-                    <div class="project-links">
-                        <a href=${project.linkFont}>Codigo</a>
-                        <a href=${project.linkSite}>Live</a>
-                    </div>    
+        if (project.specificPage === true )
+            {
+            listProject += `
+                <div class="project-card" id="${project.id}">
+                    <img src="../../${project.img}" alt="${project.titulo}" class="project-image">
+                    <div class="project-info">
+                        <h3>${project.titulo}</h3>
+                        <p>${project.description}</p>
+                        <div class="project-tags">
+                            ${project.tech.split(',').map((tag) => `<span class="tag">${tag}</span>`).join('')}
+                        </div>    
+
+                        <div class="project-links">
+                            
+                            <a href=../../${project.linkSite}>Acessar Pagina</a>
+                        </div>    
+                    </div>
                 </div>
-            </div>
-        `
-    }
+            `
+        } else{
+                listProject += `
+                <div class="project-card" id="${project.id}">
+                    <img src="../../${project.img}" alt="${project.titulo}" class="project-image">
+                    <div class="project-info">
+                        <h3>${project.titulo}</h3>
+                        <p>${project.description}</p>
+                        <div class="project-tags">
+                            ${project.tech.split(',').map((tag) => `<span class="tag">${tag}</span>`).join('')}
+                        </div>    
+
+                        <div class="project-links">
+                            <a href=${project.linkFont}>Codigo</a>
+                            <a href=${project.linkSite}>Live</a>
+                        </div>    
+                    </div>
+                </div>
+            `
+        }
+
     
 
     });

@@ -232,6 +232,7 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Pizzaria-Italiaba-landingPage/",
         Progress: false,
         specificPage: false,
+        highlight: true,
     },
 
     {
@@ -244,6 +245,6 @@ const myprojects = [
         linkSite: "./pages/Devbuger-Project/index.html",
         Progress: false,
         specificPage: true,
-        highlight: true,
+
     }
 ];
