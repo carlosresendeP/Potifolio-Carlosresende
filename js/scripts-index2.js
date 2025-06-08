@@ -3,10 +3,10 @@ const navbar = document.querySelector('.header');
 
 //fixar navbar quando rolar a página
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 80) {
         navbar.classList.add('header-fixed');
     } else {
-        navbar.classList.remove('navbar-fixed');
+        navbar.classList.remove('header-fixed');
     }
 });
 

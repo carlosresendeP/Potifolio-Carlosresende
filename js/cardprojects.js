@@ -7,74 +7,71 @@ let listProject = ''
 
 
 
-function showProjects(projects){
+function showProjects(projects) {
     listProject = ''
 
-    projects.forEach((project) => {
+    //pegar apenas 3 projetos com o highlight =true
 
-        //verficar se a pagina é especifica
-        if(project.specificPage === true )
-            
-            {
-                listProject +=`
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src=${project.img} alt="Projeto ${project.titulo}">
-                        <div class="project-overlay specific">
-                            <div class="project-links specific">
-                                <a href=${project.linkSite} title="Ver Projeto" target="_blank" class='specific' ><span> Ver Projeto</span></a>
-                            </div>
-                        </div>
+    projects.filter((project) => project.highlight === true).forEach((project) => {
+
+        listProject += `
+            <div class="project-card" id="${project.id}">
+                <img src="../../${project.img}" alt="Projeto Justly" class="project-img">
+                <div class="project-info">
+                    <h3>${project.titulo}</h3>
+                    <p>${project.description}</p>
+                    <div class="project-tags">
+                        ${project.tech.split(',').map((tag) => `<span class="tag">${tag}</span>`).join('')}
                     </div>
-                    <div class="project-info">
-                        <h3 class="project-title">${project.titulo} <span class='progress'> ${project.Progress ? 'Desenvolvimento' : 'Finalizado'} </span></h3>
-                        <p>${project.description}</p>
-                        <div class="project-tags">
-                            ${project.tech.split(',').map((tag) => `<span class="project-tag">${tag}</span>`).join('')}
-                        </div>
+                    <div class="project-links">
+                        <a href="${project.codeLink}">Código</a>
+                        <a href="${project.liveLink}">Live</a>
                     </div>
                 </div>
-        `
-        }
-
-        else
-            {
-                listProject +=`
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src=${project.img} alt="Projeto ${project.titulo}">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href=${project.linkSite} title="Ver Projeto" target="_blank" ><span>👁️</span></a>
-                                <a href=${project.linkFont} title="Ver Código" target="_blank" ><span>💻</span>  </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">${project.titulo} <span class='progress'> ${project.Progress ? 'Desenvolvimento' : 'Finalizado'} </span></h3>
-                        <p>${project.description}</p>
-                        <div class="project-tags">
-                            ${project.tech.split(',').map((tag) => `<span class="project-tag">${tag}</span>`).join('')}
-                        </div>
-                    </div>
-                </div>
-        `
-        }
-        
-
-
-
-    });
+            </div>`;
+    })
 
     GridCards.innerHTML = listProject
-    
+};
+
+
+//pegar os projetos do array e criar cards para cada um
+/* projects.forEach((project) => {
+
+         {
+             listProject +=`
+             <div class="project-card">
+                 <img src="../../${project.img}" alt="Projeto Justly" class=".project-img ">
+                 <div class="project-info">
+                     <h3>Nome</h3>
+                     <p>Descrição do projeto 1.</p>
+                     <div class="project-tags">
+                         <span class="tag">HTML</span>
+                         <span class="tag">CSS</span>
+                         <span class="tag">JavaScript</span> 
+                     </div>    
+
+                     <div class="project-links">
+                         <a href="#">Codigo</a>
+                         <a href="#">Live</a>
+                     </div>    
+                 </div>
+     `
+     }       
+ });*/
 
 
     
-}
 
 
-document.addEventListener("DOMContentLoaded", ()=> {
+    
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
     showProjects(myprojects);
 });
+
+
+
 

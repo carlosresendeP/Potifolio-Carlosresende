@@ -178,6 +178,7 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Projeto-Barber-shop",
         linkSite: "https://barberdev-ten.vercel.app/",
         Progress: false,
+        highlight: true,
     },
     {
         id: 19,
@@ -198,6 +199,7 @@ const myprojects = [
         linkFont:"https://github.com/carlosresendeP/Projeto-landing-page-neuropsicologa",
         linkSite: "https://projeto-rubialand-website.vercel.app/",
         Progress: false,
+        highlight: true,
     },
     {
         id: 21,
@@ -242,5 +244,6 @@ const myprojects = [
         linkSite: "./pages/Devbuger-Project/index.html",
         Progress: false,
         specificPage: true,
+        highlight: true,
     }
 ];
