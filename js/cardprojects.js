@@ -24,8 +24,8 @@ function showProjects(projects) {
                         ${project.tech.split(',').map((tag) => `<span class="tag">${tag}</span>`).join('')}
                     </div>
                     <div class="project-links">
-                        <a href="${project.codeLink}">Código</a>
-                        <a href="${project.liveLink}">Live</a>
+                        <a href="${project.linkFont}">Código</a>
+                        <a href="${project.linkSite}">Live</a>
                     </div>
                 </div>
             </div>`;
