@@ -232,7 +232,7 @@ const myprojects = [
         linkSite: "https://carlosresendep.github.io/Pizzaria-Italiaba-landingPage/",
         Progress: false,
         specificPage: false,
-        highlight: true,
+
     },
 
     {
@@ -246,5 +246,16 @@ const myprojects = [
         Progress: false,
         specificPage: true,
 
+    },
+    {
+        id: 24,
+        img: "./assets/capas/thumb-prime-digital.png",
+        description: " Projeto de um site de uma agência de tecnologia, com foco em design e usabilidade.",
+        titulo: "Prime Digital Studio",
+        tech: "Html, CSS, Javascript, bootstrap, Mobile Responsive",
+        linkFont:"https://github.com/carlosresendeP/site-prime-digital",
+        linkSite: "https://primedigital-studio.vercel.app/",
+        Progress: false,
+        highlight: true,
     }
 ];
