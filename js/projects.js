@@ -227,16 +227,26 @@ const myprojects = [
         img: "./assets/capas/Thumb-pizzaria-italiana.png",
         description: "Website de uma pizzaria italiana, com foco em design e usabilidade.",
         titulo: "Pizza Italiana",
-        tech: "HTML, CSS, JAVASCRIPT, BOOTSTRAP, Mobile Responsive",
+        tech: "HTML, Styled Components, Javascript, React, ApiRest",
         linkFont:"https://github.com/carlosresendeP/Pizzaria-Italiaba-landingPage",
         linkSite: "https://carlosresendep.github.io/Pizzaria-Italiaba-landingPage/",
         Progress: false,
         specificPage: false,
 
     },
-
     {
         id: 24,
+        img: "./assets/capas/Thumb-devprice.png",
+        description: " Projeto de um site de buscador de preços de produtos",
+        titulo: "Dev Price",
+        tech: "Html, CSS, Javascript, bootstrap, Mobile Responsive",
+        linkFont:"https://github.com/carlosresendeP/Dev-Price-guide",
+        linkSite: "https://dev-price.vercel.app/",
+        Progress: false,
+    },
+
+    {
+        id: 25,
         img: "./assets/capas/Thumb-DevBurger.png",
         description: "Projeto completo de uma hamburgueria com sistema de pedidos e pagamentos, cadastro de produtos",
         titulo: "Dev Burger",
@@ -248,7 +258,7 @@ const myprojects = [
 
     },
     {
-        id: 24,
+        id: 26,
         img: "./assets/capas/thumb-prime-digital.png",
         description: " Projeto de um site de uma agência de tecnologia, com foco em design e usabilidade.",
         titulo: "Prime Digital Studio",

@@ -29,7 +29,7 @@ function showProjects(projects) {
 
                         <div class="project-links">
                             
-                            <a href=../../${project.linkSite}>Acessar Pagina</a>
+                            <a href=../../${project.linkSite} >Acessar Pagina</a>
                         </div>    
                     </div>
                 </div>
@@ -46,8 +46,8 @@ function showProjects(projects) {
                         </div>    
 
                         <div class="project-links">
-                            <a href=${project.linkFont}>Codigo</a>
-                            <a href=${project.linkSite}>Live</a>
+                            <a href="${project.linkFont}" target="_blank">Código</a>
+                            <a href="${project.linkSite}" target="_blank">Live</a>
                         </div>    
                     </div>
                 </div>
