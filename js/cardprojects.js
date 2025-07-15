@@ -16,6 +16,7 @@ function showProjects(projects) {
 
         listProject += `
             <div class="project-card" id="${project.id}">
+                ${project.isNew ? '<span class="new-badge">NOVO</span>' : ''}
                 <img src="../../${project.img}" alt="Projeto Justly" class="project-img">
                 <div class="project-info">
                     <h3>${project.titulo}</h3>
@@ -61,10 +62,10 @@ function showProjects(projects) {
  });*/
 
 
-    
 
 
-    
+
+
 
 
 

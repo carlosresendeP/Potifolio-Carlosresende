@@ -11,14 +11,12 @@ function showProjects(projects) {
 
     listProject = ''
 
-    projects.forEach((project) => {
+    projects.reverse().forEach((project) => {
 
-        
-
-        if (project.specificPage === true )
-            {
+        if (project.specificPage === true) {
             listProject += `
                 <div class="project-card" id="${project.id}">
+                    ${project.isNew ? '<span class="new-badge">NOVO</span>' : ''}
                     <img src="../../${project.img}" alt="${project.titulo}" class="project-image">
                     <div class="project-info">
                         <h3>${project.titulo}</h3>
@@ -34,9 +32,10 @@ function showProjects(projects) {
                     </div>
                 </div>
             `
-        } else{
-                listProject += `
+        } else {
+            listProject += `
                 <div class="project-card" id="${project.id}">
+                    ${project.isNew ? '<span class="new-badge">NOVO</span>' : ''}
                     <img src="../../${project.img}" alt="${project.titulo}" class="project-image">
                     <div class="project-info">
                         <h3>${project.titulo}</h3>
@@ -46,15 +45,16 @@ function showProjects(projects) {
                         </div>    
 
                         <div class="project-links">
-                            <a href="${project.linkFont}" target="_blank">Código</a>
-                            <a href="${project.linkSite}" target="_blank">Live</a>
+                            ${project.linkFont ? `<a href="../../${project.linkFont}" target="_blank">Código</a>` : ''}
+                            ${project.linkSite ? `<a href="../../${project.linkSite}" target="_blank">Live</a>` : ''}
+
                         </div>    
                     </div>
                 </div>
             `
         }
 
-    
+
 
     });
 
