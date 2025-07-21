@@ -221,6 +221,7 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/Dev-ArchVision",
         linkSite: "https://carlosresendep.github.io/Dev-ArchVision/",
         Progress: false,
+        highlight: true,
     },
     {
         id: 23,
@@ -278,7 +279,7 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/dietaai-app",
         linkSite: "",
         Progress: false,
-        highlight: true,
+        highlight: false,
         isNew: true,
     },
 
@@ -292,7 +293,7 @@ const myprojects = [
         linkFont: "https://github.com/carlosresendeP/DevReceita",
         linkSite: "https://dev-receita.vercel.app/",
         Progress: false,
-        highlight: true,
+        highlight: false,
         isNew: true,
     },
 

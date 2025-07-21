@@ -12,7 +12,7 @@ function showProjects(projects) {
 
     //pegar apenas 3 projetos com o highlight =true
 
-    projects.filter((project) => project.highlight === true).forEach((project) => {
+    projects.filter((project) => project.highlight === true).reverse().forEach((project) => {
 
         listProject += `
             <div class="project-card" id="${project.id}">
